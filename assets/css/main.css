@@ -44,16 +44,18 @@
 /* about */
 #section__02 {
     padding-top: 245px;
+    width: 100%;
+    height: 2100px;
 }
 
 .title__section02 {
-    display: flex;
     width: 70%;
 }
 
 .text__box {
     width: 60%;
     padding-left: 40px;
+    padding-bottom: 30px;
 }
 
 .title__section02 .text__box {
@@ -79,31 +81,121 @@
 
 .about__arched {
     position: absolute;
-    top: -350px;
+    top: -320px;
     right: 100px;
+    z-index: 3;
+
 }
 
-.about__arched img {
+.about__arched>img {
     width: 350px;
     height: 450px;
 }
 
 .about__box {
     position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 2;
 }
 
-.about__box img {
+.about__box>img {
     width: 950px;
     height: 650px;
 }
 
 .about__me {
     position: absolute;
+    width: 750px;
+    height: 950px;
+
+    z-index: 4;
+    top: 480px;
+    right: 520px;
+}
+
+.about__me>img {
     width: 700px;
     height: 950px;
 }
 
-.about__me img {
-    width: 700px;
+.about__me .about__desc {
+    padding-top: 30px;
+    word-break: keep-all;
+    line-height: 26px;
+    color: var(--font-big-color);
+}
+
+.about__back {
+    float: right;
+    margin-top: 230px;
+    width: 1410px;
+    height: 1020px;
+    background-color: #e0e4ff;
+}
+
+/* cat */
+#section__03 {
+    padding-top: 230px;
+
+    width: 100%;
+    height: 2020px;
+}
+
+#section__03 .text__box {
+    width: 60%;
+    font-family: var(--font-big-ligth);
+    font-size: 5rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: var(--font-big-color);
+}
+
+#section__03 .text__box .bottom em {
+    font-family: var(--font-small);
+    font-size: 18px;
+}
+
+.cat__side {
+    position: relative;
+
+}
+
+.cat__img {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 3;
+}
+
+.cat__img>img {
+    width: 1000px;
+
+}
+
+.cat__back {
+    position: absolute;
+    top: 290px;
+    right: 0;
+}
+
+.cat__back>img {
+    width: 1335px;
+
+}
+
+.about__cat {
+    width: 1400px;
     height: 950px;
+    background-color: #e0e4ff;
+    margin-left: 30px;
+    margin-top: 170px;
+
+    padding-top: 700px;
+    padding-left: 170px;
+}
+
+.about__cat .cat__desc {
+    width: 60%;
+    color: var(--font-big-color);
 }
