@@ -1,0 +1,17 @@
+body {
+    background: var(--bg);
+}
+
+.header_container {
+    width: 1860px;
+    padding: 0 10px;
+    margin: 0 auto;
+    min-width: 1860px;
+}
+
+.container {
+    width: 1520px;
+    padding: 0 10px;
+    margin: 0 auto;
+    min-width: 1520px;
+}

@@ -1,0 +1,112 @@
+/* Southland */
+@font-face {
+    font-family: "Southland";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Southland.eot");
+    src: url("../fonts/Southland.eot?iefix") format("embedded-opentype"),
+        url("../fonts/Southland.woff2") format("woff2"),
+        url("../fonts/Southland.woff") format("woff"),
+        url("../fonts/Southland.ttf") format("truetype");
+    font-display: swap;
+}
+
+/* IMHyemin */
+@font-face {
+    font-family: 'IMHyemin';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IMHyemin';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.ttf') format("truetype");
+    font-display: swap;
+}
+
+/* PPHatton */
+@font-face {
+    font-family: "PPHatton-Ultralight";
+    font-weight: lighter;
+    font-style: normal;
+    src: url("../fonts/PPHatton-Ultralight.eot");
+    src: url("../fonts/PPHatton-Ultralight.eot?iefix") format("embedded-opentype"),
+        url("../fonts/PPHatton-Ultralight.woff2") format("woff2"),
+        url("../fonts/PPHatton-Ultralight.woff") format("woff"),
+        url("../fonts/PPHatton-Ultralight.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PPHatton-Medium";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/PPHatton-Medium.eot");
+    src: url("../fonts/PPHatton-Medium.eot?iefix") format("embedded-opentype"),
+        url("../fonts/PPHatton-Medium.woff2") format("woff2"),
+        url("../fonts/PPHatton-Medium.woff") format("woff"),
+        url("../fonts/PPHatton-Medium.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PPHatton-Bold";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/PPHatton-Bold.eot");
+    src: url("../fonts/PPHatton-Bold.eot?iefix") format("embedded-opentype"),
+        url("../fonts/PPHatton-Bold.woff2") format("woff2"),
+        url("../fonts/PPHatton-Bold.woff") format("woff"),
+        url("../fonts/PPHatton-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+/* YUniverse */
+@font-face {
+    font-family: "YUniverse-B00";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/YUniverse-B00.eot");
+    src: url("../fonts/YUniverse-B00.eot?iefix") format("embedded-opentype"),
+        url("../fonts/YUniverse-B00.woff2") format("woff2"),
+        url("../fonts/YUniverse-B00.woff") format("woff"),
+        url("../fonts/YUniverse-B00.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YUniverse-L00";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/YUniverse-L00.eot");
+    src: url("../fonts/YUniverse-L00.eot?iefix") format("embedded-opentype"),
+        url("../fonts/YUniverse-L00.woff2") format("woff2"),
+        url("../fonts/YUniverse-L00.woff") format("woff"),
+        url("../fonts/YUniverse-L00.ttf") format("truetype");
+    font-display: swap;
+}
+
+/* YUniverse */
+@font-face {
+    font-family: "Abel-Regular";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Abel-Regular.eot");
+    src: url("../fonts/Abel-Regular.eot?iefix") format("embedded-opentype"),
+        url("../fonts/Abel-Regular.woff2") format("woff2"),
+        url("../fonts/Abel-Regular.woff") format("woff"),
+        url("../fonts/Abel-Regular.ttf") format("truetype");
+    font-display: swap;
+}
