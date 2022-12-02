@@ -67,6 +67,7 @@
 }
 
 .title__section02 .text__box .bottom {
+    margin-top: -43px;
     padding-left: 300px;
 }
 
@@ -151,6 +152,10 @@
     color: var(--font-big-color);
 }
 
+#section__03 .text__box .bottom {
+    margin-top: -43px;
+}
+
 #section__03 .text__box .bottom em {
     font-family: var(--font-small);
     font-size: 18px;
@@ -175,7 +180,7 @@
 
 .cat__back {
     position: absolute;
-    top: 290px;
+    top: 360px;
     right: 0;
 }
 
@@ -191,11 +196,91 @@
     margin-left: 30px;
     margin-top: 170px;
 
-    padding-top: 700px;
-    padding-left: 170px;
+    padding: 720px 0 0 170px;
 }
 
 .about__cat .cat__desc {
     width: 60%;
     color: var(--font-big-color);
+}
+
+/* section__04 */
+#section__04 {
+    width: 100%;
+    height: 2600px;
+    position: relative;
+}
+
+.script__title {
+    padding-left: 40px;
+    width: 60%;
+    font-family: var(--font-big-ligth);
+    font-size: 7rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #22407A;
+}
+
+#section__04 .script__title em {
+    font-family: var(--font-small);
+    font-size: 18px;
+}
+
+#section__04 .script__back {
+    width: 100%;
+    height: 550px;
+    background-color: #CBDFF2;
+    color: #22407A;
+    padding: 60px 0 0 200px;
+    margin-bottom: 610px;
+}
+
+.script__back .script__desc {
+    width: 46%;
+    word-break: keep-all;
+}
+
+#section__04 .script__sea {
+    position: absolute;
+    top: 360px;
+    right: 0;
+}
+
+#section__04 .effect__ul {
+    padding-left: 200px;
+    color: #394083;
+
+}
+
+#section__04 .effect__ul .effect__list li {
+    display: flex;
+}
+
+#section__04 .effect__ul .effect__list a {
+    font-size: 6.2rem;
+    padding-right: 30px;
+    color: #394083;
+    display: inline-block;
+    line-height: 160px;
+    font-family: var(--font-big-ligth);
+}
+
+#section__04 .effect__ul .effect__list span {
+    margin-top: 18px;
+    font-size: 18px;
+    display: inline-block;
+    font-family: var(--font-small);
+}
+
+#section__04 .script__sea>img {
+    width: 1200px;
+}
+
+#section__04 .view__curser>img {
+    width: 350px;
+}
+
+#section__04 .view__curser {
+    float: right;
+    padding-right: 40px;
 }
