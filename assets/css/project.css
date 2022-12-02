@@ -1,0 +1,98 @@
+#section__06 {
+    padding-top: 300px;
+
+}
+
+#section__06 .project__top {
+    position: relative;
+    height: 835px;
+}
+
+#section__06 .project__top>h2 {
+    text-align: center;
+    font-size: 10.6rem;
+    font-family: var(--font-big-ligth);
+    text-transform: uppercase;
+    color: #353c7c;
+
+    /* mix-blend-mode: difference; */
+}
+
+#section__06 .project__top span {
+    position: absolute;
+    top: 15%;
+    z-index: -5;
+}
+
+#section__06 .project__top span>img {
+    mix-blend-mode: difference;
+}
+
+#section__06 .project__middle {
+    padding-top: 375px;
+    height: 1270px;
+    position: relative;
+}
+
+#section__06 .project__middle>h2 {
+    font-size: 5rem;
+    font-family: var(--font-big-ligth);
+    text-transform: uppercase;
+    color: #353c7c;
+
+    padding-left: 100px;
+}
+
+#section__06 .project__middle .middle__back {
+    position: absolute;
+    z-index: -5;
+    top: 360px;
+    left: 280px;
+}
+
+#section__06 .project__middle .middle__back>img {
+    width: 500px;
+}
+
+#section__06 .project__middle .main__image {
+    padding: 30px 30px 15px 0;
+    float: right;
+}
+
+#section__06 .project__middle .main__image>img {
+    width: 1190px;
+}
+
+#section__06 .project__middle .main__image .middle__desc {
+    width: 38%;
+    word-break: keep-all;
+}
+
+#section__06 .project__bottom {
+    padding: 420px 100px 0 0;
+    text-align: right;
+
+}
+
+#section__06 .project__bottom>h2 {
+    font-size: 6rem;
+    font-family: var(--font-big-ligth);
+    text-transform: uppercase;
+    color: #353c7c;
+}
+
+.project__bottom .bottom__back .BusinessCard>img {
+    width: 530px;
+}
+
+.project__bottom .bottom__back .bottom__image>img {
+    width: 1190px;
+    margin-left: auto;
+    display: block;
+}
+
+.project__bottom .bottom__back .back__box {
+    width: 730px;
+    height: 220px;
+    background-color: #9d91de8c;
+}
