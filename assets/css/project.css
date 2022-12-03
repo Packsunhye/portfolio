@@ -72,6 +72,9 @@
     padding: 420px 100px 0 0;
     text-align: right;
 
+    height: 1600px;
+    position: relative;
+
 }
 
 #section__06 .project__bottom>h2 {
@@ -81,6 +84,13 @@
     color: #353c7c;
 }
 
+
+.project__bottom .bottom__back .BusinessCard {
+    position: absolute;
+    top: 460px;
+    left: 255px;
+    z-index: -2;
+}
 .project__bottom .bottom__back .BusinessCard>img {
     width: 530px;
 }
@@ -89,10 +99,22 @@
     width: 1190px;
     margin-left: auto;
     display: block;
+    margin-bottom: 20px;
+}
+.project__bottom .bottom__back .bottom__desc {
+    color: #6a68b8;
+    width: 28%;
+    float: right;
+    word-break: keep-all;
 }
 
 .project__bottom .bottom__back .back__box {
     width: 730px;
     height: 220px;
     background-color: #9d91de8c;
+
+   position: absolute;
+   top: 665px;
+   left: 100px;
+   z-index: -3;
 }

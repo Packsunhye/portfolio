@@ -16,6 +16,13 @@ body {
     min-width: 1520px;
 }
 
+.section_container {
+    width: 1620px;
+    padding: 0 10px;
+    margin: 0 auto;
+    min-width: 1620px;
+}
+
 body::-webkit-scrollbar {
     width: 8px;
     /* 스크롤바의 너비 */
@@ -33,4 +40,15 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
     background: #eff1ff00;
     /*스크롤바 뒷 배경 색상*/
+}
+
+summary::marker{
+    content: "+ ";
+    font-weight: normal;
+    font-family: var(--font-prt);
+    font-size: 24px;
+    
+}
+details[open] summary::marker {
+    content: "- ";
 }
