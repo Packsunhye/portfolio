@@ -131,6 +131,10 @@
     position: relative;
 }
 
+.upsite__view .react__01 {
+    cursor: pointer;
+}
+
 .upsite__view .react-01-view {
     display: none;
 
@@ -140,7 +144,27 @@
     display: block;
     width: 800px;
     position: absolute;
-    top: -20%;
+    top: -18%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+
+.upsite__view .vue__01 {
+    cursor: pointer;
+}
+
+.upsite__view .vue-01-view {
+    display: none;
+
+}
+
+.upsite__view em:hover+.vue-01-view {
+    display: block;
+    width: 800px;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
 }
