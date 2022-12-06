@@ -126,3 +126,21 @@
     margin-bottom: 230px;
     color: #fff;
 }
+
+.upsite__view {
+    position: relative;
+}
+
+.upsite__view .react-01-view {
+    display: none;
+
+}
+
+.upsite__view em:hover+.react-01-view {
+    display: block;
+    width: 800px;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
