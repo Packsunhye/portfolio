@@ -24,15 +24,15 @@
         <section id="section__01">
             <h1 class="split">frontend developoer</h1>
             <p>PackSunHye‘ s Portfolio</p>
-            <img src="assets/img/main.png" alt="메인이미지" class="main__image">
+            <div class="imge__container"></div>
         </section>
         <!-- //section__01 -->
 
         <section id="section__02">
             <div class="section02__title">
-                <h2 class="top">welcome to</h2>
+                <h2 class="top split">welcome to</h2>
                 <div class="flex_zone">
-                    <h2 class="bottom">portfolio <em>성장속도가 남다른 개발자 박선혜입니다.</em></h2>
+                    <h2 class="bottom">portfolio <em class="split">성장속도가 남다른 개발자 박선혜입니다.</em></h2>
                     <img src="assets/img/section02-01.png" alt="아치형이미지" class="about__arched">
                 </div>
             </div>
@@ -85,7 +85,7 @@
 
     // 헤더 내려오기
     // gsap.set("#header", { height: -40 })
-    gsap.to("#header", { delay: 3, top: 0 })
+    gsap.to("#header", { delay: 3.6, top: 0 })
 
     // 글씨 쪼개기
     document.querySelectorAll(".split").forEach(desc => {
@@ -97,16 +97,16 @@
     })
     // 글자 하나씩 올라오기
     gsap.set("#section__01 h1 span", { opacity: 0, y: 100 })
-    gsap.to("#section__01 h1 span", { duration: 1, delay: 0, opacity: 1, stagger: 0.08, ease: "Back.out(1.7)", y: 10 });
+    gsap.to("#section__01 h1 span", { duration: 1, delay: 1, opacity: 1, stagger: 0.08, ease: "Back.out(1.7)", y: 10 });
 
     // 글자 올라오기 
-    gsap.to("#section__01 p", { opacity: 1, delay: 1.5, y: -30, duration: 2, });
+    gsap.to("#section__01 p", { opacity: 1, delay: 2, y: -30, duration: 2, });
 
     // 이미지 로드
     console.clear();
 
     const imageContainer = document.querySelector('#section__01')
-    const image = imageContainer.querySelector('#section__01 .main__image')
+    const image = imageContainer.querySelector('#section__01 .imge__container')
 
     const imageAnimation = gsap.timeline({
         defaults: {
@@ -114,7 +114,7 @@
             ease: 'Power3.inOut',
         }
     });
-
+    // 이미지 슈웅 내려오기
     imageAnimation
         .from(imageContainer, {
             yPercent: -100,
@@ -127,18 +127,51 @@
             duration: 2,
         }, 0);
 
-    gsap.set("#section__01 .main__image", { opacity: 1, width: "100%" })
+    // 이미지 스크롤 내릴때 작아지기
     const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: "#section__01 .main__image",
+            trigger: "#section__02",
             scrub: true,
         }
     })
-        .to(".main__image", {
+        .to(".imge__container", {
             scrub: true,
-            width: "1500px",
-            easing: "power1.out"
+            width: "60%",
+            // easing: "power1.out",
+            ease: "Circ.out"
         })
+
+
+
+    // #section__02
+    gsap.set("#section__02 .section02__title .top span", { opacity: 0, y: 100 })
+    gsap.to("#section__02 .section02__title .top span", {
+        scrollTrigger: {
+            trigger: "#section__02 .section02__title",
+            // scrub: true,
+            start: "top 100%",
+        },
+        duration: 1,
+        delay: 1,
+        opacity: 1,
+        stagger: 0.08,
+        ease: "Back.out(1.7)",
+        y: 10
+    })
+    gsap.set("#section__02 .section02__title .flex_zone .bottom span", { opacity: 0, y: 100 })
+    gsap.to("#section__02 .section02__title .flex_zone .bottom span", {
+        scrollTrigger: {
+            trigger: "#section__02 .section02__title",
+            // scrub: true,
+            start: "top 100%",
+        },
+        duration: 1,
+        delay: 1.6,
+        opacity: 1,
+        stagger: 0.08,
+        ease: "Back.out(1.7)",
+        y: 10
+    })
 
 
 </script>
