@@ -7,67 +7,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index02</title>
     <link href="https://webfontworld.github.io/Rebecca/Rebecca.css" rel="stylesheet">
-    <link rel="stylesheet" href="style02.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
     <div class="scrollTop">0</div>
+
     <header id="header">
-        <div class="header__inner header_container">
-            <a href="#" class="left">Portfolio</a>
-            <a href="#" class="right">menu</a>
+        <div class="header__inner">
+            <h1>Portfolio</h1>
+            <nav>menu</nav>
         </div>
     </header>
+    <!-- //header -->
     <main id="main">
-        <section id="section__01" class="container">
-            <h1 class="Title">frontend developoer</h1>
-            <div class="title-container">
-                <h3>PackSunHye ‘ s Portfolio</h3>
-            </div>
-            <span>
-                <div class="reveal">
-                    <img src="assets/img/pueple_main.png" alt="메인이미지" class="main__image">
-                </div>
-            </span>
+        <section id="section__01">
+            <h1 class="split">frontend developoer</h1>
+            <p>PackSunHye‘ s Portfolio</p>
+            <img src="assets/img/main.png" alt="메인이미지" class="main__image">
         </section>
+        <!-- //section__01 -->
+
+        <section id="section__02">
+            <div class="section02__title">
+                <h2 class="top">welcome to</h2>
+                <div class="flex_zone">
+                    <h2 class="bottom">portfolio <em>성장속도가 남다른 개발자 박선혜입니다.</em></h2>
+                    <img src="assets/img/section02-01.png" alt="아치형이미지" class="about__arched">
+                </div>
+            </div>
+            <div class="section02__image">
+                <img src="assets/img/section02-02.png" alt="보라색박스" class="about__box">
+                <span class="about__me">
+                    <img src="assets/img/section02-03.png" alt="박선혜프로필사진" class="profill">
+                    <div class="about__desc">
+                        게임학과를 전공한 저는 디자인이나 일러스트를 주로 공부하였지만 웹 디자인이라는 것을 교양으로
+                        처음 접하게 된 후 관심을 갖게되었습니다. 학교를 졸업한 뒤 웹 디자인도 제대로 배워보고 싶어
+                        여러가지 알아보던 중 웹 퍼블리셔나, 프론프 앤드에 대해 알게 되었고 학원을 다니며 배우게 되었습니다.
+                        처음 배운 코딩의 세계는 많이 어려웠지만 그만큼 저에게 도전의식과 재미를 갖게 되어 꿈에도 나올 만큼
+                        빠지게 되었습니다. 물론 제 생각만큼 쉬운 길은 아니겠지만, 더더욱 성장하며 개발자 박선혜가 되겠습니다.
+                    </div>
+                </span>
+                <div class="about__back"></div>
+            </div>
+        </section>
+        <!-- //section__02 -->
+        <section id="section__03"></section>
+        <!-- //section__03 -->
+        <section id="section__04"></section>
+        <!-- //section__04 -->
+        <section id="section__05"></section>
+        <!-- //section__05 -->
+        <section id="section__06"></section>
+        <!-- //section__06 -->
     </main>
+    <!-- //main -->
 </body>
-<script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 <script src="assets/js/scrollTop.js"></script>
 <script>
-    onload = (event) => {
+    gsap.registerPlugin(ScrollTrigger)
 
+    // smooth 효과
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
     }
 
-    gsap.registerPlugin(ScrollTrigger);
+    requestAnimationFrame(raf);
 
-    let revealContainers = document.querySelectorAll(".reveal");
+    // 헤더 내려오기
+    // gsap.set("#header", { height: -40 })
+    gsap.to("#header", { delay: 3, top: 0 })
 
-    revealContainers.forEach((container) => {
-        let image = container.querySelector(".main__image");
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: container,
-                toggleActions: "restart none none reset"
-            }
-        });
+    // 글씨 쪼개기
+    document.querySelectorAll(".split").forEach(desc => {
+        let splitText = desc.innerText;
+        let splitWrap = splitText.split('').join("</span><span aria-hidden='true'>");
+        splitWrap = "<span aria-hidden='true'>" + splitWrap + "</span>";
+        desc.innerHTML = splitWrap;
+        desc.setAttribute("aria-label", splitText);
+    })
+    // 글자 하나씩 올라오기
+    gsap.set("#section__01 h1 span", { opacity: 0, y: 100 })
+    gsap.to("#section__01 h1 span", { duration: 1, delay: 0, opacity: 1, stagger: 0.08, ease: "Back.out(1.7)", y: 10 });
 
-        tl.set(container, { autoAlpha: 1 });
-        tl.from(container, 1.5, {
-            xPercent: 0,
-            ease: Power2.out
-        });
-        tl.from(image, 1.5, {
-            yPercent: 100,
-            scale: 1,
-            scrub: 2,
-            delay: -1.8,
-            ease: Power2.out
-        });
+    // 글자 올라오기 
+    gsap.to("#section__01 p", { opacity: 1, delay: 1.5, y: -30, duration: 2, });
+
+    // 이미지 로드
+    console.clear();
+
+    const imageContainer = document.querySelector('#section__01')
+    const image = imageContainer.querySelector('#section__01 .main__image')
+
+    const imageAnimation = gsap.timeline({
+        defaults: {
+            duration: 1.4,
+            ease: 'Power3.inOut',
+        }
     });
+
+    imageAnimation
+        .from(imageContainer, {
+            yPercent: -100,
+            duration: 2,
+
+        }, 0)
+        .from(image, {
+            yPercent: 100,
+            scale: 1.15,
+            duration: 2,
+        }, 0);
+
+    gsap.set("#section__01 .main__image", { opacity: 1, width: "100%" })
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#section__01 .main__image",
+            scrub: true,
+        }
+    })
+        .to(".main__image", {
+            scrub: true,
+            width: "1500px",
+            easing: "power1.out"
+        })
 
 
 </script>
