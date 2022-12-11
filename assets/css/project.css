@@ -41,6 +41,8 @@
     color: #353c7c;
 
     padding-left: 100px;
+
+    filter: invert(100%);
 }
 
 #section__06 .project__middle .middle__back {
@@ -48,6 +50,8 @@
     z-index: -5;
     top: 360px;
     left: 280px;
+
+   
 }
 
 #section__06 .project__middle .middle__back>img {
