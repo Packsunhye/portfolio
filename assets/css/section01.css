@@ -62,24 +62,29 @@
     justify-content: space-between;
 }
 
-#section__02 .section02__title .bottom {
+#section__02 .section02__title .bottom i {
     font-size: 6.3vw;
     margin-top: -45px;
     text-transform: uppercase;
     padding-left: 340px;
     font-family: var(--font-title);
     color: var(--font-title-color);
+    font-style: normal;
+
+    
 }
 
 #section__02 .section02__title .bottom em {
     font-size: 18px;
     font-family: var(--font-desc);
+    color: var(--font-title-color);
 }
 
 .flex_zone .about__arched {
     width: 350px;
     margin-top: -166px;
     margin-right: 100px;
+    
 }
 
 #section__02 .section02__image {
@@ -98,7 +103,6 @@
 
     z-index: -2;
 }
-
 .section02__image .about__box {
     width: 950px;
     float: right;

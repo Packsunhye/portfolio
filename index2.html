@@ -32,13 +32,14 @@
             <div class="section02__title">
                 <h2 class="top split">welcome to</h2>
                 <div class="flex_zone">
-                    <h2 class="bottom">portfolio <em class="split">성장속도가 남다른 개발자 박선혜입니다.</em></h2>
-                    <img src="assets/img/section02-01.png" alt="아치형이미지" class="about__arched">
+                    <h2 class="bottom"><i class="split">portfolio</i> <em class="split">성장속도가 남다른 개발자 박선혜입니다.</em></h2>
+                        <img src="assets/img/section02-01.png" alt="아치형이미지" class="about__arched eex">
+                    </div>
                 </div>
             </div>
             <div class="section02__image">
-                <img src="assets/img/section02-02.png" alt="보라색박스" class="about__box">
-                <span class="about__me">
+                <img src="assets/img/section02-02.png" alt="보라색박스" class="about__box kkx">
+                <span class="about__me ddx">
                     <img src="assets/img/section02-03.png" alt="박선혜프로필사진" class="profill">
                     <div class="about__desc">
                         게임학과를 전공한 저는 디자인이나 일러스트를 주로 공부하였지만 웹 디자인이라는 것을 교양으로
@@ -86,6 +87,7 @@
     // 헤더 내려오기
     // gsap.set("#header", { height: -40 })
     gsap.to("#header", { delay: 3.6, top: 0 })
+   
 
     // 글씨 쪼개기
     document.querySelectorAll(".split").forEach(desc => {
@@ -166,13 +168,111 @@
             start: "top 100%",
         },
         duration: 1,
-        delay: 1.6,
+        delay: 1.4,
         opacity: 1,
         stagger: 0.08,
         ease: "Back.out(1.7)",
         y: 10
     })
+    gsap.set("#section__02 .section02__title .flex_zone .about__arched", { opacity: 0, x: -100 })
+    gsap.to("#section__02 .section02__title .flex_zone .about__arched", {
+        scrollTrigger: {
+            trigger: "#section__02 .section02__title",
+            // scrub: true,
+            start: "top 100%",
+        },
+        duration: 2,
+        delay: 3,
+        opacity: 1,
+        stagger: 0.3,
+        ease: "Back.out(1.7)",
+        x: 10
+    })
+    gsap.set("#section__02 .section02__image .about__box", { opacity: 0, y: 100})
+    gsap.to("#section__02 .section02__image .about__box", {
+        scrollTrigger: {
+            trigger: "#section__02 .section02__title",
+            // scrub: true,
+            start: "top 100%",
+        },
+        duration: 2,
+        delay: 3.5,
+        opacity: 1,
+        stagger: 0.3,
+        ease: "Back.out(1.7)",
+        y: 10,
+        
+    })
+    gsap.set("#section__02 .section02__image .about__me .profill", { opacity: 0, y: 100})
+    gsap.to("#section__02 .section02__image .about__me .profill", {
+        scrollTrigger: {
+            trigger: "#section__02 .about__me",
+            // scrub: true,
+            start: "top 100%",
+        },
+        duration: 2,
+        delay: 4,
+        opacity: 1,
+        stagger: 0.3,
+        ease: "Back.out(1.7)",
+        y: 10,
+        
+    })
+    gsap.set("#section__02 .section02__image .about__me .about__desc ", { opacity: 0, y: 100})
+    gsap.to("#section__02 .section02__image .about__me .about__desc ", {
+        scrollTrigger: {
+            trigger: "#section__02 .about__me",
+            // scrub: true,
+            start: "top 100%",
+        },
+        duration: 1, 
+        delay: 4.3, 
+        opacity: 1, 
+        stagger: 0.3,
+        ease: "Back.out(1.7)", 
+        y: 10
+        
+    })
+    gsap.set("#section__02 .about__back", { opacity: 0})
+    gsap.to("#section__02 .about__back", {
+        scrollTrigger: {
+            trigger: "#section__02 .about__me",
+            // scrub: true,
+            start: "top 100%",
+        },
+        duration: 1, 
+        delay: 2, 
+        opacity: 1, 
+        stagger: 0.3,
+        ease: "Back.out(1.7)", 
+        
+    })
 
+     //스크롤 이질감
+     function scroll(){
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.screenY;
+
+        document.querySelectorAll("section").forEach(item => {
+            const target1 = item.querySelector(".eex"); //
+            const target2 = item.querySelector(".ddx");
+            const target3 = item.querySelector(".ffx");
+            const target4 = item.querySelector(".kkx");
+
+            let offset1 = (scrollTop - item.offsetTop) * 0.1; //세로빠르게
+            let offset2 = (scrollTop - item.offsetTop) * 0.06; //세로느리게
+            let offset3 = (scrollTop - item.offsetTop) * 0.2; //가로빠르게
+            let offset4 = (scrollTop - item.offsetTop) * 0.02; //가로느리게
+
+            gsap.to(target1, {duration : .3, y : offset1, ease : "power4.out"});
+            gsap.to(target2, {duration : .6, y : offset2});
+            gsap.to(target3, {duration : .3, x : offset3, ease : "expo.out"});
+            gsap.to(target4, {duration : .3, x : -offset4, ease : "expo.out"});
+        })
+
+        requestAnimationFrame(scroll);
+    }
+    scroll();
+  
 
 </script>
 
