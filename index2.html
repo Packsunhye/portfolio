@@ -91,46 +91,47 @@
                 </div>
             </div>
             <img src="assets/img/section03-01.png" alt="스크립트시작" class="script__sea ddx">
-            <img src="assets/img/section03-02.png" alt="가져가대면 보여줄 이미지" class="view__curser">
+            <div class="view__curser"></div>
+            <!-- <img src="assets/img/section03-02.png" alt="가져가대면 보여줄 이미지" class=""> -->
 
             <div class="effect__ul">
                 <ul class="effect__list">
                     <li>
-                        <a href="#">QUIZ EEFECT</a>
+                        <a href="#" class="p-1">QUIZ EEFECT</a>
                         <span> 처음 배운 자바스크립트로 배열을 만들어<br>
                             직접 60문제의 카드를 만들지 않고 제작했습니다.
                         </span>
                     </li>
                     <li>
-                        <a href="#">SEARCH EEFECT</a>
+                        <a href="#" class="p-2">SEARCH EEFECT</a>
                         <span>
                             간단한 자바스크립트 메서드를 이용하여<br>
                             서치 게임을 만들어 봤습니다.
                         </span>
                     </li>
                     <li>
-                        <a href="#">SLIDER EEFECT</a>
+                        <a href="#" class="p-1">SLIDER EEFECT</a>
                         <span>
                             플러그인을 사용하지 않고 이미지 슬라이드를<br>
                             직접 작성해보았습니다.
                         </span>
                     </li>
                     <li>
-                        <a href="#">MOUSE EEFECT</a>
+                        <a href="#" class="p-1">MOUSE EEFECT</a>
                         <span>
                             GSAP를 이용하여 마우스를 움직여 이미지를 반전시키거나<br>
                             글자를 기울게 만들었습니다.
                         </span>
                     </li>
                     <li>
-                        <a href="#">PARALLAX EEFECT</a>
+                        <a href="#" class="p-1">PARALLAX EEFECT</a>
                         <span>
                             패럴렉스 이펙트를 공부하여 스크롤링에 도움이 되는<br>
                             사이트를 만들었습니다.
                         </span>
                     </li>
                     <li>
-                        <a href="#">GAME EEFECT</a>
+                        <a href="#" class="p-1">GAME EEFECT</a>
                         <span>
                             뮤직 플레이어, 기억력 게임, 카드 게임, 테트리스 게임등을 제작하여<br>
                             게임을 할 수 있는 사이트를 만들었습니다.
@@ -180,6 +181,22 @@
         let centerPageX = section04.innerWidth / 2 - mousePageX;
         let centerPageY = section04.innerHeight / 2 - mousePageY;
     });
+
+    document.querySelector('.p-1').addEventListener("mouseover", function () {
+        cursor2.style.backgroundImage = "url(assets/img/quiz-min.JPG)"
+    });
+    document.querySelector('.p-2').addEventListener("mouseover", function () {
+        cursor2.style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive2_gcrxje.jpg)"
+    });
+
+    document.querySelector('.p-3').addEventListener("mouseover", function () {
+        cursor2.style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive3_mfhw4e.jpg)"
+    });
+    document.querySelector('.p-4').addEventListener("mouseover", function () {
+        cursor2.style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive4_ztkutp.jpg)"
+    });
+
+
 
 </script>
 

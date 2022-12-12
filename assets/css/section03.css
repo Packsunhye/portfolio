@@ -113,7 +113,24 @@
 #section__04 .view__curser {
     position: absolute;
     width: 350px;
+    height: 350px;
+    /* background-color: #222; */
+    border-radius: 50%;
     z-index: 1;
+    background-image: url(../img/section03-02.png);
+    /* background: no-repeat 50% 50%; */
+    background-size: cover;
+}
+
+#section__04 .view__curser::after {
+    content: 'view';
+    font-family: var(--font-title);
+    font-size: 5vw;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #section__04 .effect__ul {
