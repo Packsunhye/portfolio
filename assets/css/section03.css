@@ -118,7 +118,7 @@
     border-radius: 50%;
     z-index: 1;
     background-image: url(../img/section03-02.png);
-    /* background: no-repeat 50% 50%; */
+    background: no-repeat 50% 50%;
     background-size: cover;
 }
 
