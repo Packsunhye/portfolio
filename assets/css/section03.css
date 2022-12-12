@@ -1,0 +1,143 @@
+/* cat */
+#section__03 {
+    margin-bottom: 340px;
+}
+
+#section__03 .text__box {
+    width: 60%;
+    font-size: 4.3vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    color: var(--font-title-color);
+    padding-left: 40px;
+}
+
+#section__03 .text__box .bottom {
+    margin-top: -45px;
+}
+
+#section__03 .text__box .bottom i {
+    font-style: normal;
+}
+
+#section__03 .text__box .bottom em {
+    font-size: 0.9vw;
+    font-family: var(--font-desc);
+    color: var(--font-title-color);
+}
+
+#section__03 .cat__side {
+    position: relative;
+}
+
+#section__03 .cat__side .cat__img {
+    width: 1000px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 1;
+}
+
+#section__03 .cat__side .cat__back {
+    width: 1335px;
+    float: right;
+    padding-top: 370px;
+}
+
+#section__03 .about__cat {
+    width: 1400px;
+    height: 950px;
+    background-color: #e0e4ff;
+    padding: 720px 0 0 170px;
+    margin: 180px 0 0 40px;
+}
+
+#section__03 .about__cat .cat__desc {
+    width: 60%;
+    font-size: 0.9vw;
+    font-family: var(--font-desc);
+    color: var(--font-title-color);
+}
+
+/* section__04 */
+#section__04 {
+    width: 100%;
+    height: 2600px;
+}
+
+.script__title {
+    padding-left: 40px;
+    width: 60%;
+    font-family: var(--font-title);
+    font-size: 5.8vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #22407A;
+}
+
+.script__title i {
+    font-style: normal;
+}
+
+
+#section__04 .script__title em {
+    font-family: var(--font-desc);
+    font-size: 0.9vw;
+}
+
+#section__04 .script__back {
+    width: 100%;
+    height: 550px;
+    background-color: #CBDFF2;
+    color: #22407A;
+    padding: 60px 0 0 200px;
+
+    position: relative;
+
+}
+
+.script__back .script__desc {
+    width: 46%;
+    font-family: var(--font-desc);
+    word-break: keep-all;
+}
+
+#section__04 .script__sea {
+    width: 1200px;
+    float: right;
+    margin-top: -360px;
+
+}
+
+#section__04 .view__curser {
+    position: absolute;
+    width: 350px;
+    z-index: 1;
+}
+
+#section__04 .effect__ul {
+    color: #394083;
+    padding: 600px 0 0 200px;
+}
+
+
+#section__04 .effect__ul .effect__list li {
+    display: flex;
+}
+
+#section__04 .effect__ul .effect__list a {
+    font-size: 5.2vw;
+    padding-right: 30px;
+    color: #394083;
+    display: inline-block;
+    line-height: 160px;
+    font-family: var(--font-title);
+}
+
+#section__04 .effect__ul .effect__list span {
+    margin-top: 18px;
+    font-size: 0.9vw;
+    display: inline-block;
+    font-family: var(--font-desc);
+}

@@ -12,6 +12,7 @@
 
 <body>
     <div class="scrollTop">0</div>
+    <div class="mouse__cursor"></div>
 
     <header id="header">
         <div class="header__inner">
@@ -21,21 +22,21 @@
     </header>
     <!-- //header -->
     <main id="main">
-        <section id="section__01">
+        <section id="section__01" class="section">
             <h1 class="split">frontend developoer</h1>
             <p>PackSunHye‘ s Portfolio</p>
             <div class="imge__container"></div>
         </section>
         <!-- //section__01 -->
 
-        <section id="section__02">
+        <section id="section__02" class="section">
             <div class="section02__title">
                 <h2 class="top split">welcome to</h2>
                 <div class="flex_zone">
                     <h2 class="bottom"><i class="split">portfolio</i> <em class="split">성장속도가 남다른 개발자 박선혜입니다.</em></h2>
-                        <img src="assets/img/section02-01.png" alt="아치형이미지" class="about__arched eex">
-                    </div>
+                    <img src="assets/img/section02-01.png" alt="아치형이미지" class="about__arched eex">
                 </div>
+            </div>
             </div>
             <div class="section02__image">
                 <img src="assets/img/section02-02.png" alt="보라색박스" class="about__box kkx">
@@ -53,10 +54,92 @@
             </div>
         </section>
         <!-- //section__02 -->
-        <section id="section__03"></section>
+
+        <section id="section__03">
+            <div class="text__box">
+                <h2 class="top split">my lovely</h2>
+                <h2 class="bottom"><i class="split">cat</i><em class="split">나의 평생 친구입니다.</em></h2>
+            </div>
+            <div class="cat__side">
+                <img src="assets/img/section02-04.png" alt="고양이" class="cat__img kkx">
+                <img src="assets/img/section02-05.png" alt="고양이뒷배경" class="cat__back ppx">
+            </div>
+            <div class="about__cat">
+                <div class="cat__desc">
+                    새로운 일이나, 무엇이든 계기를 만들어주는 저의 소중한 가족입니다. <br>
+                    물론 집에서 가끔 방해를 하긴 하지만 공부할 때에 곁에 있어주는 기특한 아이입니다. <br>
+                    저를 소개할 때에 빠질 수 없는 존재라 생각해 같이 소개합니다.
+                </div>
+            </div>
+        </section>
         <!-- //section__03 -->
-        <section id="section__04"></section>
+
+        <section id="section__04">
+            <h2 class="script__title">
+                <i class="split">script effect</i>
+                <em class="split">
+                    여러 이펙트의 자바스크립트를
+                    공부해보았습니다.
+                </em>
+            </h2>
+            <div class="script__back">
+                <div class="script__desc">
+                    처음 배운 자바스크립트로 메서드나, for문 foreach문 등으로 공부한 이펙트들입니다. 마우스 커서를 움직일 때
+                    글씨가 반전되거나,스크롤을 내릴때 이미지에 이질감을주거나, 이미지를 좌우로 슬라이 드 할 수 있으며
+                    여러 CSS 속성을 검색 할 수도 있고 객관식의 약 60문항의 정답과, 점수를 구할 수 있게 되었습니다.
+                    마지막으로 뮤직플레이어를 만들거나 기억력 게임, 테트리스 게임, 카드 게임을 즐겁게 만들었습니다.
+                </div>
+            </div>
+            <img src="assets/img/section03-01.png" alt="스크립트시작" class="script__sea ddx">
+            <img src="assets/img/section03-02.png" alt="가져가대면 보여줄 이미지" class="view__curser">
+
+            <div class="effect__ul">
+                <ul class="effect__list">
+                    <li>
+                        <a href="#">QUIZ EEFECT</a>
+                        <span> 처음 배운 자바스크립트로 배열을 만들어<br>
+                            직접 60문제의 카드를 만들지 않고 제작했습니다.
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#">SEARCH EEFECT</a>
+                        <span>
+                            간단한 자바스크립트 메서드를 이용하여<br>
+                            서치 게임을 만들어 봤습니다.
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#">SLIDER EEFECT</a>
+                        <span>
+                            플러그인을 사용하지 않고 이미지 슬라이드를<br>
+                            직접 작성해보았습니다.
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#">MOUSE EEFECT</a>
+                        <span>
+                            GSAP를 이용하여 마우스를 움직여 이미지를 반전시키거나<br>
+                            글자를 기울게 만들었습니다.
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#">PARALLAX EEFECT</a>
+                        <span>
+                            패럴렉스 이펙트를 공부하여 스크롤링에 도움이 되는<br>
+                            사이트를 만들었습니다.
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#">GAME EEFECT</a>
+                        <span>
+                            뮤직 플레이어, 기억력 게임, 카드 게임, 테트리스 게임등을 제작하여<br>
+                            게임을 할 수 있는 사이트를 만들었습니다.
+                        </span>
+                    </li>
+                </ul>
+        </section>
         <!-- //section__04 -->
+
         <section id="section__05"></section>
         <!-- //section__05 -->
         <section id="section__06"></section>
@@ -67,212 +150,36 @@
 <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-<script src="assets/js/scrollTop.js"></script>
+<script src="assets/js/scrollTop.js"></script> <!-- 스크롤 -->
+<script src="assets/js/gsap.js"></script> <!-- GSAP -->
 <script>
-    gsap.registerPlugin(ScrollTrigger)
+    const cursor = document.querySelector(".mouse__cursor")
+    const cursor2 = document.querySelector(".view__curser")
+    const section04 = document.querySelector("#section__04")
+    const cursorBox = cursor2.getBoundingClientRect();
 
-    // smooth 효과
-    const lenis = new Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+
+    window.addEventListener("mousemove", e => {
+        //GSAP
+        gsap.to(cursor, { duration: 0.15, left: e.pageX - 5, top: e.pageY - 5 });
+        // gsap.to(cursor2, { duration: 0.8, left: e.pageX - 15, top: e.pageY - 15 });
+    })
+
+    document.querySelector("#section__04 .effect__ul").addEventListener("mousemove", (e) => {
+        //커서
+        gsap.to(cursor2, {
+            duration: 0.8,
+            left: e.pageX - cursorBox.width / 4,
+            top: e.pageY - cursorBox.height / 4
+        });
+
+        //마우스 좌표값 
+        let mousePageX = e.pageX;
+        let mousePageY = e.pageY;
+
+        let centerPageX = section04.innerWidth / 2 - mousePageX;
+        let centerPageY = section04.innerHeight / 2 - mousePageY;
     });
-
-    function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    // 헤더 내려오기
-    // gsap.set("#header", { height: -40 })
-    gsap.to("#header", { delay: 3.6, top: 0 })
-   
-
-    // 글씨 쪼개기
-    document.querySelectorAll(".split").forEach(desc => {
-        let splitText = desc.innerText;
-        let splitWrap = splitText.split('').join("</span><span aria-hidden='true'>");
-        splitWrap = "<span aria-hidden='true'>" + splitWrap + "</span>";
-        desc.innerHTML = splitWrap;
-        desc.setAttribute("aria-label", splitText);
-    })
-    // 글자 하나씩 올라오기
-    gsap.set("#section__01 h1 span", { opacity: 0, y: 100 })
-    gsap.to("#section__01 h1 span", { duration: 1, delay: 1, opacity: 1, stagger: 0.08, ease: "Back.out(1.7)", y: 10 });
-
-    // 글자 올라오기 
-    gsap.to("#section__01 p", { opacity: 1, delay: 2, y: -30, duration: 2, });
-
-    // 이미지 로드
-    console.clear();
-
-    const imageContainer = document.querySelector('#section__01')
-    const image = imageContainer.querySelector('#section__01 .imge__container')
-
-    const imageAnimation = gsap.timeline({
-        defaults: {
-            duration: 1.4,
-            ease: 'Power3.inOut',
-        }
-    });
-    // 이미지 슈웅 내려오기
-    imageAnimation
-        .from(imageContainer, {
-            yPercent: -100,
-            duration: 2,
-
-        }, 0)
-        .from(image, {
-            yPercent: 100,
-            scale: 1.15,
-            duration: 2,
-        }, 0);
-
-    // 이미지 스크롤 내릴때 작아지기
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#section__02",
-            scrub: true,
-        }
-    })
-        .to(".imge__container", {
-            scrub: true,
-            width: "60%",
-            // easing: "power1.out",
-            ease: "Circ.out"
-        })
-
-
-
-    // #section__02
-    gsap.set("#section__02 .section02__title .top span", { opacity: 0, y: 100 })
-    gsap.to("#section__02 .section02__title .top span", {
-        scrollTrigger: {
-            trigger: "#section__02 .section02__title",
-            // scrub: true,
-            start: "top 100%",
-        },
-        duration: 1,
-        delay: 1,
-        opacity: 1,
-        stagger: 0.08,
-        ease: "Back.out(1.7)",
-        y: 10
-    })
-    gsap.set("#section__02 .section02__title .flex_zone .bottom span", { opacity: 0, y: 100 })
-    gsap.to("#section__02 .section02__title .flex_zone .bottom span", {
-        scrollTrigger: {
-            trigger: "#section__02 .section02__title",
-            // scrub: true,
-            start: "top 100%",
-        },
-        duration: 1,
-        delay: 1.4,
-        opacity: 1,
-        stagger: 0.08,
-        ease: "Back.out(1.7)",
-        y: 10
-    })
-    gsap.set("#section__02 .section02__title .flex_zone .about__arched", { opacity: 0, x: -100 })
-    gsap.to("#section__02 .section02__title .flex_zone .about__arched", {
-        scrollTrigger: {
-            trigger: "#section__02 .section02__title",
-            // scrub: true,
-            start: "top 100%",
-        },
-        duration: 2,
-        delay: 3,
-        opacity: 1,
-        stagger: 0.3,
-        ease: "Back.out(1.7)",
-        x: 10
-    })
-    gsap.set("#section__02 .section02__image .about__box", { opacity: 0, y: 100})
-    gsap.to("#section__02 .section02__image .about__box", {
-        scrollTrigger: {
-            trigger: "#section__02 .section02__title",
-            // scrub: true,
-            start: "top 100%",
-        },
-        duration: 2,
-        delay: 3.5,
-        opacity: 1,
-        stagger: 0.3,
-        ease: "Back.out(1.7)",
-        y: 10,
-        
-    })
-    gsap.set("#section__02 .section02__image .about__me .profill", { opacity: 0, y: 100})
-    gsap.to("#section__02 .section02__image .about__me .profill", {
-        scrollTrigger: {
-            trigger: "#section__02 .about__me",
-            // scrub: true,
-            start: "top 100%",
-        },
-        duration: 2,
-        delay: 4,
-        opacity: 1,
-        stagger: 0.3,
-        ease: "Back.out(1.7)",
-        y: 10,
-        
-    })
-    gsap.set("#section__02 .section02__image .about__me .about__desc ", { opacity: 0, y: 100})
-    gsap.to("#section__02 .section02__image .about__me .about__desc ", {
-        scrollTrigger: {
-            trigger: "#section__02 .about__me",
-            // scrub: true,
-            start: "top 100%",
-        },
-        duration: 1, 
-        delay: 4.3, 
-        opacity: 1, 
-        stagger: 0.3,
-        ease: "Back.out(1.7)", 
-        y: 10
-        
-    })
-    gsap.set("#section__02 .about__back", { opacity: 0})
-    gsap.to("#section__02 .about__back", {
-        scrollTrigger: {
-            trigger: "#section__02 .about__me",
-            // scrub: true,
-            start: "top 100%",
-        },
-        duration: 1, 
-        delay: 2, 
-        opacity: 1, 
-        stagger: 0.3,
-        ease: "Back.out(1.7)", 
-        
-    })
-
-     //스크롤 이질감
-     function scroll(){
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.screenY;
-
-        document.querySelectorAll("section").forEach(item => {
-            const target1 = item.querySelector(".eex"); //
-            const target2 = item.querySelector(".ddx");
-            const target3 = item.querySelector(".ffx");
-            const target4 = item.querySelector(".kkx");
-
-            let offset1 = (scrollTop - item.offsetTop) * 0.1; //세로빠르게
-            let offset2 = (scrollTop - item.offsetTop) * 0.06; //세로느리게
-            let offset3 = (scrollTop - item.offsetTop) * 0.2; //가로빠르게
-            let offset4 = (scrollTop - item.offsetTop) * 0.02; //가로느리게
-
-            gsap.to(target1, {duration : .3, y : offset1, ease : "power4.out"});
-            gsap.to(target2, {duration : .6, y : offset2});
-            gsap.to(target3, {duration : .3, x : offset3, ease : "expo.out"});
-            gsap.to(target4, {duration : .3, x : -offset4, ease : "expo.out"});
-        })
-
-        requestAnimationFrame(scroll);
-    }
-    scroll();
-  
 
 </script>
 
