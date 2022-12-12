@@ -23,9 +23,11 @@
     <!-- //header -->
     <main id="main">
         <section id="section__01" class="section">
-            <h1 class="split">frontend developoer</h1>
-            <p>PackSunHye‘ s Portfolio</p>
-            <div class="imge__container"></div>
+            <div class="center">
+                <h1 class="split">frontend developoer</h1>
+                <p>PackSunHye‘ s Portfolio</p>
+                <div class="imge__container"></div>
+            </div>
         </section>
         <!-- //section__01 -->
 
@@ -62,7 +64,8 @@
             </div>
             <div class="cat__side">
                 <img src="assets/img/section02-04.png" alt="고양이" class="cat__img kkx">
-                <img src="assets/img/section02-05.png" alt="고양이뒷배경" class="cat__back ppx">
+                <div class="cat__back ppx"></div>
+                <!-- <img src="assets/img/section02-05.png" alt="고양이뒷배경" class="cat__back "> -->
             </div>
             <div class="about__cat">
                 <div class="cat__desc">
@@ -97,41 +100,41 @@
             <div class="effect__ul">
                 <ul class="effect__list">
                     <li>
-                        <a href="#" class="p-1">QUIZ EEFECT</a>
+                        <a href="#" class="p-1 ere">QUIZ EEFECT</a>
                         <span> 처음 배운 자바스크립트로 배열을 만들어<br>
                             직접 60문제의 카드를 만들지 않고 제작했습니다.
                         </span>
                     </li>
                     <li>
-                        <a href="#" class="p-2">SEARCH EEFECT</a>
+                        <a href="#" class="p-2 ere">SEARCH EEFECT</a>
                         <span>
                             간단한 자바스크립트 메서드를 이용하여<br>
                             서치 게임을 만들어 봤습니다.
                         </span>
                     </li>
                     <li>
-                        <a href="#" class="p-3">SLIDER EEFECT</a>
+                        <a href="#" class="p-3 ere">SLIDER EEFECT</a>
                         <span>
                             플러그인을 사용하지 않고 이미지 슬라이드를<br>
                             직접 작성해보았습니다.
                         </span>
                     </li>
                     <li>
-                        <a href="#" class="p-4">MOUSE EEFECT</a>
+                        <a href="#" class="p-4 ere">MOUSE EEFECT</a>
                         <span>
                             GSAP를 이용하여 마우스를 움직여 이미지를 반전시키거나<br>
                             글자를 기울게 만들었습니다.
                         </span>
                     </li>
                     <li>
-                        <a href="#" class="p-5">PARALLAX EEFECT</a>
+                        <a href="#" class="p-5 ere">PARALLAX EEFECT</a>
                         <span>
                             패럴렉스 이펙트를 공부하여 스크롤링에 도움이 되는<br>
                             사이트를 만들었습니다.
                         </span>
                     </li>
                     <li>
-                        <a href="#" class="p-6">GAME EEFECT</a>
+                        <a href="#" class="p-6 ere">GAME EEFECT</a>
                         <span>
                             뮤직 플레이어, 기억력 게임, 카드 게임, 테트리스 게임등을 제작하여<br>
                             게임을 할 수 있는 사이트를 만들었습니다.
@@ -152,10 +155,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 <script src="assets/js/scrollTop.js"></script> <!-- 스크롤 -->
-<script src="assets/js/gsap.js"></script> <!-- GSAP -->
+<!-- <script src="assets/js/gsap.js"></script> -->
+<script src="assets/js/gsap02.js"></script> <!-- GSAP -->
 <script>
     const cursor = document.querySelector(".mouse__cursor")
     const cursor2 = document.querySelector(".view__curser")
+    const after = window.getComputedStyle(cursor2, '::after');
     const section04 = document.querySelector("#section__04")
     const cursorBox = cursor2.getBoundingClientRect();
 
@@ -182,8 +187,15 @@
         let centerPageY = section04.innerHeight / 2 - mousePageY;
     });
 
+    document.querySelectorAll('.ere').forEach(e => {
+        e.addEventListener("mouseout", function () {
+            cursor2.style.backgroundImage = "url(assets/img/section03-02.png)"
+        })
+    });
+
     document.querySelector('.p-1').addEventListener("mouseover", function () {
         cursor2.style.backgroundImage = "url(assets/img/quiz-min.JPG)"
+        after.style.color = "#000000";
     });
     document.querySelector('.p-2').addEventListener("mouseover", function () {
         cursor2.style.backgroundImage = "url(assets/img/search-min.JPG)"
@@ -200,7 +212,6 @@
     document.querySelector('.p-6').addEventListener("mouseover", function () {
         cursor2.style.backgroundImage = "url(assets/img/game-min.JPG)"
     });
-
 
 
 </script>
