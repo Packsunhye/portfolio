@@ -112,6 +112,7 @@
 #section__04 .script__title em {
     font-family: var(--font-desc);
     font-size: 0.9vw;
+    transform: translateY(3vw);
 }
 
 #section__04 .script__back {
