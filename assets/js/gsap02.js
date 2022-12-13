@@ -227,11 +227,11 @@ gsap.to("#section__03 .cat__side .cat__img", {
   ease: "Back.out(1.7)",
   y: 10,
 });
-gsap.set("#section__03 .cat__side .cat__back", {
-  opacity: 0,
-  width: "70%",
-  height: "40vh",
-});
+// gsap.set("#section__03 .cat__side .cat__back", {
+//   opacity: 0,
+//   width: "70%",
+//   height: "40vh",
+// });
 // gsap.to("#section__03 .cat__side .cat__back", {
 //   scrollTrigger: {
 //     trigger: "#section__03 .cat__side",
