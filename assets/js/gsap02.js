@@ -227,7 +227,7 @@ gsap.to("#section__03 .cat__side .cat__img", {
   ease: "Back.out(1.7)",
   y: 10,
 });
-let sections3 = gsap.utils.toArray("#section__03");
+// let sections3 = gsap.utils.toArray("#section__03");
 gsap.to("#section__03 .cat__side .cat__back", {
   scrollTrigger: {
     trigger: "#section__03 .cat__side",
@@ -237,10 +237,11 @@ gsap.to("#section__03 .cat__side .cat__back", {
   delay: 1.2,
   opacity: 1,
   stagger: 0.08,
-  // xPercent: -100 * (sections2.length - 1),
-  xPercent: -100 * (sections3.length - 1),
+  // yPercent: "-1500",
+  // xPercent: -100 * (sections3.length - 1),
   ease: "Circ.out",
 });
+//
 
 gsap.set("#section__03 .about__cat .cat__desc", {
   opacity: 0,
@@ -296,12 +297,26 @@ gsap.to("#section__04 .script__back .script__desc", {
     // scrub: true,
     start: "top 80%",
   },
-  duration: 1.2,
+  duration: 1,
   delay: 1.6,
   opacity: 1,
   stagger: 0.08,
   ease: "Back.out(1.7)",
   y: 10,
+});
+gsap.set("#section__04 .script__sea", { opacity: 0, x: 100 });
+gsap.to("#section__04 .script__sea", {
+  scrollTrigger: {
+    trigger: "#section__04 .script__back",
+    // scrub: true,
+    start: "top 100%",
+  },
+  duration: 1,
+  delay: 2,
+  opacity: 1,
+  stagger: 0.08,
+  ease: "Back.out(1.7)",
+  x: 0,
 });
 
 //스크롤 이질감
