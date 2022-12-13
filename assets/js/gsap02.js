@@ -78,13 +78,13 @@ gsap.to("#section__02 .section02__title .bottom i span", {
   opacity: 1,
   ease: Back.easeOut.config(1.7),
 });
-gsap.set("#section__02 .section02__title .bottom em span", { opacity: 0 });
-gsap.to("#section__02 .section02__title .bottom em span", {
+gsap.set("#section__02 .section02__title .bottom em", { opacity: 0 });
+gsap.to("#section__02 .section02__title .bottom em", {
   scrollTrigger: {
     trigger: "#section__02 .section02__title",
     start: "top 30%",
   },
-  delay: 0.8,
+  delay: 0.9,
   duration: 0.5,
   y: 0,
   stagger: 0.04,
@@ -199,8 +199,8 @@ gsap.to("#section__03 .text__box .bottom i span", {
   opacity: 1,
   ease: Back.easeOut.config(1.7),
 });
-gsap.set("#section__03 .text__box .bottom em span", { opacity: 0, y: 40 });
-gsap.to("#section__03 .text__box .bottom em span", {
+gsap.set("#section__03 .text__box .bottom em", { opacity: 0, y: 40 });
+gsap.to("#section__03 .text__box .bottom em", {
   scrollTrigger: {
     trigger: "#section__03 .cat__side",
     // scrub: true,
@@ -227,20 +227,42 @@ gsap.to("#section__03 .cat__side .cat__img", {
   ease: "Back.out(1.7)",
   y: 10,
 });
-gsap.set("#section__03 .cat__side .cat__back", { opacity: 0, x: -60 });
-gsap.to("#section__03 .cat__side .cat__back", {
-  scrollTrigger: {
-    trigger: "#section__03 .cat__side",
-    // scrub: true,
-    start: "top 60%",
-  },
-  duration: 1,
-  delay: 1.2,
-  opacity: 1,
-  stagger: 0.08,
-  x: 0,
-  ease: "Back.out(1.7)",
+gsap.set("#section__03 .cat__side .cat__back", {
+  opacity: 0,
+  width: "70%",
+  height: "40vh",
 });
+// gsap.to("#section__03 .cat__side .cat__back", {
+//   scrollTrigger: {
+//     trigger: "#section__03 .cat__side",
+//     // scrub: 1,
+//     start: "top 60%",
+//   },
+// duration: 1,
+// delay: 1.2,
+// opacity: 1,
+// stagger: 0.08,
+// // x: 0,
+// ease: "Circ.out",
+// });
+// tl.to("#section__01 .center .imge__container", {
+//   duration: 0.8,
+//   height: "50vh",
+//   ease: "Circ.out",
+// });
+
+ScrollTrigger.create({
+  trigger: "#section__03 .cat__side",
+  // scrub: 1,
+  animation: gsap.fromTo("#section__03 .cat__side .cat__back", {
+    duration: 1,
+    delay: 1.2,
+    opacity: 1,
+    stagger: 0.08,
+    ease: "Circ.out",
+  }),
+});
+
 gsap.set("#section__03 .about__cat .cat__desc", {
   opacity: 0,
   y: 100,
@@ -257,6 +279,50 @@ gsap.to("#section__03  .about__cat .cat__desc", {
   stagger: 0.08,
   y: 10,
   ease: "Back.out(1.7)",
+});
+
+// #section__04
+gsap.set("#section__04 .script__title i span", { opacity: 0, y: 40 });
+gsap.to("#section__04 .script__title i span", {
+  scrollTrigger: {
+    trigger: "#section__04 .script__title",
+    // scrub: true,
+    start: "top 80%",
+  },
+  delay: 0.5,
+  duration: 0.5,
+  y: 0,
+  stagger: 0.04,
+  opacity: 1,
+  ease: Back.easeOut.config(1.7),
+});
+gsap.set("#section__04 .script__title em ", { opacity: 0 });
+gsap.to("#section__04 .script__title em ", {
+  scrollTrigger: {
+    trigger: "#section__04 .script__title",
+    // scrub: true,
+    start: "top 80%",
+  },
+  delay: 0.4,
+  duration: 0.5,
+  y: 0,
+  stagger: 0.04,
+  opacity: 1,
+  // ease: Back.easeOut.config(1.7),
+});
+gsap.set("#section__04 .script__back .script__desc", { opacity: 0, y: 100 });
+gsap.to("#section__04 .script__back .script__desc", {
+  scrollTrigger: {
+    trigger: "#section__04 .script__back",
+    // scrub: true,
+    start: "top 80%",
+  },
+  duration: 1,
+  delay: 1.6,
+  opacity: 1,
+  stagger: 0.08,
+  ease: "Back.out(1.7)",
+  y: 10,
 });
 
 //스크롤 이질감

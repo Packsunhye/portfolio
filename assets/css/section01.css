@@ -95,11 +95,7 @@
     font-size: 0.9vw;
     font-family: var(--font-desc);
     color: var(--font-title-color);
-}
-
-#section__02 .section02__title .bottom em span {
     transform: translateY(5vw);
-    min-width: 1.5vw;
 }
 
 .flex_zone .about__arched {
