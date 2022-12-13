@@ -1,0 +1,69 @@
+#section__05 {
+    width: 100%;
+    height: 100vh;
+}
+
+#section__05 .sec05__title {
+    text-align: right;
+    padding: 0 20px;
+}
+
+#section__05 .sec05__title i {
+    font-family: var(--font-desc);
+    font-size: 18px;
+    color: #474066;
+    font-style: normal;
+}
+
+#section__05 .sec05__title em {
+    font-family: var(--font-title);
+    font-size: 7rem;
+    color: #474066;
+}
+
+#section__05 .sec05__inner {
+    position: relative;
+    width: 100%;
+    /* height: 6900px; */
+    background-image: url("../img/back-min.png");
+    background-position: center center;
+    background-size: cover;
+    z-index: -5;
+}
+
+
+#section__05 .sec05__inner .site__back {
+    padding: 0 40px;
+}
+
+#section__05 .sec05__inner .site__desc {
+    text-align: right;
+    float: right;
+    width: 46%;
+    word-break: keep-all;
+    color: #fff;
+    font-family: var(--font-desc);
+    font-size: 18px;
+
+    padding: 80px 160px 0 0;
+
+}
+
+
+#section__05 .sec05__inner .site__view {}
+
+#section__05 .sec05__inner .site__view .op {
+    width: 900px;
+}
+
+#section__05 .sec05__inner .site__view .op.one {
+    margin-top: 200px;
+}
+
+#section__05 .sec05__inner .site__view .svg-mode.one {
+    margin-top: -360px;
+}
+
+#section__05 .sec05__inner .site__view .svg-mode {
+    width: 560px;
+}

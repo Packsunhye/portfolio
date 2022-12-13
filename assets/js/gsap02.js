@@ -57,7 +57,8 @@ gsap.set("#section__02 .section02__title .top span", { opacity: 0 });
 gsap.to("#section__02 .section02__title .top span", {
   scrollTrigger: {
     trigger: "#section__02 .section02__title",
-    start: "top 30%",
+    start: "top 10%",
+    markers: true,
   },
   duration: 0.5,
   y: 0,
@@ -69,7 +70,8 @@ gsap.set("#section__02 .section02__title .bottom i span", { opacity: 0 });
 gsap.to("#section__02 .section02__title .bottom i span", {
   scrollTrigger: {
     trigger: "#section__02 .section02__title",
-    start: "top 30%",
+    start: "top 10%",
+    markers: true,
   },
   delay: 0.5,
   duration: 0.5,
@@ -82,7 +84,7 @@ gsap.set("#section__02 .section02__title .bottom em", { opacity: 0 });
 gsap.to("#section__02 .section02__title .bottom em", {
   scrollTrigger: {
     trigger: "#section__02 .section02__title",
-    start: "top 30%",
+    start: "top 10%",
   },
   delay: 0.9,
   duration: 0.5,
@@ -147,7 +149,8 @@ gsap.to("#section__02 .section02__image .about__me .about__desc ", {
   scrollTrigger: {
     trigger: "#section__02 .about__me .profill",
     // scrub: true,
-    start: "top 60%",
+    start: "top 20%",
+    markers: true,
   },
   duration: 0.8,
   delay: 0.6,
@@ -176,7 +179,8 @@ gsap.to("#section__03 .text__box .top span", {
   scrollTrigger: {
     trigger: "#section__03 .cat__side",
     // scrub: true,
-    start: "top 80%",
+    start: "top 20%",
+    markers: true,
   },
   delay: 0.5,
   duration: 0.5,
@@ -190,7 +194,8 @@ gsap.to("#section__03 .text__box .bottom i span", {
   scrollTrigger: {
     trigger: "#section__03 .cat__side",
     // scrub: true,
-    start: "top 80%",
+    start: "top 20%",
+    markers: true,
   },
   delay: 0.8,
   duration: 0.5,
@@ -204,7 +209,7 @@ gsap.to("#section__03 .text__box .bottom em", {
   scrollTrigger: {
     trigger: "#section__03 .cat__side",
     // scrub: true,
-    start: "top 80%",
+    start: "top 20%",
   },
   delay: 1,
   duration: 0.5,
@@ -213,21 +218,20 @@ gsap.to("#section__03 .text__box .bottom em", {
   opacity: 1,
   ease: Back.easeOut.config(1.7),
 });
-gsap.set("#section__03 .cat__side .cat__img", { opacity: 0, y: -60 });
+gsap.set("#section__03 .cat__side .cat__img", { opacity: 0, x: -60 });
 gsap.to("#section__03 .cat__side .cat__img", {
   scrollTrigger: {
-    trigger: "#section__03 .text__box",
+    trigger: "#section__03 .cat__side",
     // scrub: true,
-    start: "top 80%",
+    start: "top 30%",
   },
   duration: 1,
   delay: 1.4,
   opacity: 1,
   stagger: 0.08,
   ease: "Back.out(1.7)",
-  y: 10,
+  x: 0,
 });
-// let sections3 = gsap.utils.toArray("#section__03");
 gsap.to("#section__03 .cat__side .cat__back", {
   scrollTrigger: {
     trigger: "#section__03 .cat__side",
@@ -237,12 +241,8 @@ gsap.to("#section__03 .cat__side .cat__back", {
   delay: 1.2,
   opacity: 1,
   stagger: 0.08,
-  // yPercent: "-1500",
-  // xPercent: -100 * (sections3.length - 1),
   ease: "Circ.out",
 });
-//
-
 gsap.set("#section__03 .about__cat .cat__desc", {
   opacity: 0,
   y: 100,
@@ -251,7 +251,7 @@ gsap.to("#section__03  .about__cat .cat__desc", {
   scrollTrigger: {
     trigger: "#section__03 .about__cat",
     // scrub: true,
-    start: "top 100%",
+    start: "top 30%",
   },
   duration: 1,
   delay: 1.4,
@@ -262,6 +262,23 @@ gsap.to("#section__03  .about__cat .cat__desc", {
 });
 
 // #section__04
+gsap.set("#section__04 .script__back", {
+  opacity: 0,
+  backgroundColor: "#426381",
+});
+gsap.to("#section__04 .script__back", {
+  scrollTrigger: {
+    trigger: "#section__04 .script__title",
+    scrub: true,
+    start: "top 40%",
+  },
+  duration: 0.4,
+  delay: 0.6,
+  opacity: 1,
+  stagger: 0.08,
+  backgroundColor: "#CBDFF2",
+  ease: "Back.out(1.7)",
+});
 gsap.set("#section__04 .script__title i span", { opacity: 0, y: 40 });
 gsap.to("#section__04 .script__title i span", {
   scrollTrigger: {
@@ -298,7 +315,7 @@ gsap.to("#section__04 .script__back .script__desc", {
     start: "top 80%",
   },
   duration: 1,
-  delay: 1.6,
+  delay: 1.2,
   opacity: 1,
   stagger: 0.08,
   ease: "Back.out(1.7)",
@@ -309,10 +326,119 @@ gsap.to("#section__04 .script__sea", {
   scrollTrigger: {
     trigger: "#section__04 .script__back",
     // scrub: true,
-    start: "top 100%",
+    start: "top 30%",
+    markers: true,
   },
   duration: 1,
-  delay: 2,
+  delay: 1.4,
+  opacity: 1,
+  stagger: 0.08,
+  ease: "Back.out(1.7)",
+  x: 0,
+});
+gsap.set("#section__04 .effect__ul .effect__list .EY-1", {
+  opacity: 0,
+  x: 100,
+});
+gsap.to("#section__04 .effect__ul .effect__list .EY-1", {
+  scrollTrigger: {
+    trigger: "#section__04 .effect__ul",
+    // scrub: true,
+    start: "top 10%",
+    markers: true,
+  },
+  duration: 1,
+  delay: 1.6,
+  opacity: 1,
+  stagger: 0.08,
+  ease: "Back.out(1.7)",
+  x: 0,
+});
+gsap.set("#section__04 .effect__ul .effect__list .EY-2", {
+  opacity: 0,
+  x: 100,
+});
+gsap.to("#section__04 .effect__ul .effect__list .EY-2", {
+  scrollTrigger: {
+    trigger: "#section__04 .effect__ul",
+    // scrub: true,
+    start: "top 10%",
+    markers: true,
+  },
+  duration: 1,
+  delay: 1.9,
+  opacity: 1,
+  stagger: 0.08,
+  ease: "Back.out(1.7)",
+  x: 0,
+});
+gsap.set("#section__04 .effect__ul .effect__list .EY-3", {
+  opacity: 0,
+  x: 100,
+});
+gsap.to("#section__04 .effect__ul .effect__list .EY-3", {
+  scrollTrigger: {
+    trigger: "#section__04 .effect__ul",
+    // scrub: true,
+    start: "top 10%",
+    markers: true,
+  },
+  duration: 1,
+  delay: 2.2,
+  opacity: 1,
+  stagger: 0.08,
+  ease: "Back.out(1.7)",
+  x: 0,
+});
+gsap.set("#section__04 .effect__ul .effect__list .EY-4", {
+  opacity: 0,
+  x: 100,
+});
+gsap.to("#section__04 .effect__ul .effect__list .EY-4", {
+  scrollTrigger: {
+    trigger: "#section__04 .effect__ul",
+    // scrub: true,
+    start: "top 10%",
+    markers: true,
+  },
+  duration: 1,
+  delay: 2.5,
+  opacity: 1,
+  stagger: 0.08,
+  ease: "Back.out(1.7)",
+  x: 0,
+});
+gsap.set("#section__04 .effect__ul .effect__list .EY-5", {
+  opacity: 0,
+  x: 100,
+});
+gsap.to("#section__04 .effect__ul .effect__list .EY-5", {
+  scrollTrigger: {
+    trigger: "#section__04 .effect__ul",
+    // scrub: true,
+    start: "top 10%",
+    markers: true,
+  },
+  duration: 1,
+  delay: 2.8,
+  opacity: 1,
+  stagger: 0.08,
+  ease: "Back.out(1.7)",
+  x: 0,
+});
+gsap.set("#section__04 .effect__ul .effect__list .EY-6", {
+  opacity: 0,
+  x: 100,
+});
+gsap.to("#section__04 .effect__ul .effect__list .EY-6", {
+  scrollTrigger: {
+    trigger: "#section__04 .effect__ul",
+    // scrub: true,
+    start: "top 10%",
+    markers: true,
+  },
+  duration: 1,
+  delay: 3.1,
   opacity: 1,
   stagger: 0.08,
   ease: "Back.out(1.7)",

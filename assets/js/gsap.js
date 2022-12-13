@@ -212,7 +212,7 @@ gsap.to("#section__03 .cat__side .cat__back", {
   scrollTrigger: {
     trigger: "#section__03 .cat__side",
     // scrub: true,
-    start: "top 100%",
+    start: "top 20%",
   },
   duration: 1,
   delay: 1.9,
@@ -229,7 +229,7 @@ gsap.to("#section__03  .about__cat .cat__desc", {
   scrollTrigger: {
     trigger: "#section__03 .about__cat",
     // scrub: true,
-    start: "top 100%",
+    start: "top 20%",
   },
   duration: 1,
   delay: 2.4,
@@ -241,7 +241,7 @@ gsap.to("#section__03  .about__cat .cat__desc", {
 // section__04
 gsap.set("#section__04 .script__back", {
   opacity: 0,
-  backgroundColor: "#a6a5e9",
+  backgroundColor: "rgb(17, 114, 153)",
 });
 gsap.to("#section__04  .script__back", {
   scrollTrigger: {
@@ -275,25 +275,25 @@ gsap.to("#section__04 .script__back .script__desc", {
   scrollTrigger: {
     trigger: "#section__04 .script__back",
     // scrub: true,
-    start: "top 100%",
+    start: "top 40%",
   },
   duration: 1,
-  delay: 2,
+  delay: 1.2,
   opacity: 1,
   stagger: 0.08,
   ease: "Back.out(1.7)",
   y: 10,
 });
 
-gsap.set("#section__04 .script__sea", { opacity: 0, x: 100 });
+gsap.set("#section__04 .script__sea", { opacity: 0, x: 40 });
 gsap.to("#section__04 .script__sea", {
   scrollTrigger: {
     trigger: "#section__04 .script__back",
     // scrub: true,
-    start: "top 100%",
+    start: "top 10%",
   },
   duration: 1,
-  delay: 2,
+  delay: 1.3,
   opacity: 1,
   stagger: 0.08,
   ease: "Back.out(1.7)",

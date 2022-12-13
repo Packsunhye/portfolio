@@ -84,7 +84,7 @@
 /* section__04 */
 #section__04 {
     width: 100%;
-    height: 2600px;
+    height: 2700px;
 }
 
 .script__title {
@@ -118,7 +118,7 @@
 #section__04 .script__back {
     width: 100%;
     height: 550px;
-    background-color: #CBDFF2;
+    background-color: #426381;
     color: #22407A;
     padding: 60px 0 0 200px;
 
@@ -171,7 +171,7 @@
     z-index: 3;
     position: absolute;
     backdrop-filter: bl;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.137), rgba(55, 26, 134, 0.438));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.137), rgba(64, 15, 201, 0.438));
 
 }
 
