@@ -24,9 +24,8 @@
 #section__05 .sec05__inner {
     position: relative;
     width: 100%;
-    /* height: 6900px; */
+    height: 6715px;
     background-image: url("../img/back-min.png");
-    background-position: center center;
     background-size: cover;
     z-index: -5;
 }
@@ -53,17 +52,47 @@
 #section__05 .sec05__inner .site__view {}
 
 #section__05 .sec05__inner .site__view .op {
-    width: 900px;
+    width: 900px; 
+}
+#section__05 .sec05__inner .site__view .svg-mode {
+    width: 560px; 
 }
 
-#section__05 .sec05__inner .site__view .op.one {
-    margin-top: 200px;
+#section__05 .sec05__inner .site-01 {
+    padding-top: 280px;
 }
 
 #section__05 .sec05__inner .site__view .svg-mode.one {
-    margin-top: -360px;
+    margin: -390px 0 0 310px;
 }
 
-#section__05 .sec05__inner .site__view .svg-mode {
-    width: 560px;
+#section__05 .sec05__inner .site-02 {
+    padding-top: 100px;
+    float: right;
+    position: relative;
 }
+#section__05 .sec05__inner .site__view .op.two {
+}
+#section__05 .sec05__inner .site__view .svg-mode.two {
+    position: absolute;
+    top: 240px;
+    left: -135px;
+}
+#section__05 .sec05__inner .site-03 {
+    padding-top: 900px;
+    float: right;
+}
+
+#section__05 .sec05__inner .site__view .svg-mode.tree {
+    margin-top: -740px;
+}
+
+#section__05 .sec05__inner .site-04 {
+    padding-top: 360px;
+    float: right;
+}
+
+#section__05 .sec05__inner .site__view .svg-mode.fo {
+    margin-top: -330px;
+}
+
