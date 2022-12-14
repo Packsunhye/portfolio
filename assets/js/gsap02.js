@@ -1,17 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // smooth 효과
-const lenis = new Lenis({
-  duration: 1.2,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-});
+// const lenis = new Lenis({
+//   duration: 1.2,
+//   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+// });
 
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
+// function raf(time) {
+//   lenis.raf(time);
+//   requestAnimationFrame(raf);
+// }
 
-requestAnimationFrame(raf);
+// requestAnimationFrame(raf);
 
 // 헤더 내려오기
 // gsap.set("#header", { height: -40 })
@@ -445,30 +445,68 @@ gsap.to("#section__04 .effect__ul .effect__list .EY-6", {
   x: 0,
 });
 
+// const target1 = gsap.utils.toArray(".eex");
+
 //스크롤 이질감
+// function scroll() {
+//   let scrollTop =
+//     window.pageYOffset || document.documentElement.scrollTop || window.screenY;
+
+//   document.querySelectorAll("section").forEach((item) => {
+//     const target1 = gsap.utils.toArray(".eex"); //
+//     const target2 = gsap.utils.toArray(".ddx");
+//     const target3 = gsap.utils.toArray(".ffx");
+//     const target4 = gsap.utils.toArray(".kkx");
+//     const target5 = gsap.utils.toArray(".ppx");
+
+//     let offset1 = (scrollTop - item.offsetTop) * 0.1; //세로빠르게
+//     let offset2 = (scrollTop - item.offsetTop) * 0.03; //세로느리게
+//     let offset3 = (scrollTop - item.offsetTop) * 0.2; //가로빠르게
+//     let offset4 = (scrollTop - item.offsetTop) * 0.02; //가로느리게반대
+//     let offset5 = (scrollTop - item.offsetTop) * 0.06; //세로느리게반대
+
+//     gsap.to(target1, { duration: 0.3, y: offset1, ease: "power4.easeOut" });
+//     gsap.to(target2, { duration: 0.6, y: offset2 });
+//     gsap.to(target3, { duration: 0.3, x: offset3, ease: "expo.easeOut" });
+//     gsap.to(target4, { duration: 0.3, x: -offset4, ease: "expo.easeOut" });
+//     gsap.to(target5, { duration: 0.3, y: offset5, ease: "expo.easeIn" });
+//   });
+
+//   requestAnimationFrame(scroll);
+// }
+// scroll();
+
 function scroll() {
   let scrollTop =
     window.pageYOffset || document.documentElement.scrollTop || window.screenY;
 
-  document.querySelectorAll("section").forEach((item) => {
-    const target1 = item.querySelector(".eex"); //
-    const target2 = item.querySelector(".ddx");
-    const target3 = item.querySelector(".ffx");
-    const target4 = item.querySelector(".kkx");
-    const target5 = item.querySelector(".ppx");
+  const target1 = gsap.utils.toArray(".eex"); //
+  const target2 = gsap.utils.toArray(".ddx");
+  const target3 = gsap.utils.toArray(".ffx");
+  const target4 = gsap.utils.toArray(".kkx");
+  const target5 = gsap.utils.toArray(".ppx");
 
-    let offset1 = (scrollTop - item.offsetTop) * 0.1; //세로빠르게
-    let offset2 = (scrollTop - item.offsetTop) * 0.03; //세로느리게
-    let offset3 = (scrollTop - item.offsetTop) * 0.2; //가로빠르게
-    let offset4 = (scrollTop - item.offsetTop) * 0.02; //가로느리게반대
-    let offset5 = (scrollTop - item.offsetTop) * 0.06; //세로느리게반대
+  let offset1 = (scrollTop - item.offsetTop) * 0.1; //세로빠르게
+  let offset2 = (scrollTop - item.offsetTop) * 0.03; //세로느리게
+  let offset3 = (scrollTop - item.offsetTop) * 0.2; //가로빠르게
+  let offset4 = (scrollTop - item.offsetTop) * 0.02; //가로느리게반대
+  let offset5 = (scrollTop - item.offsetTop) * 0.06; //세로느리게반대
 
-    gsap.to(target1, { duration: 0.3, y: offset1, ease: "power4.out" });
-    gsap.to(target2, { duration: 0.6, y: offset2 });
-    gsap.to(target3, { duration: 0.3, x: offset3, ease: "expo.out" });
-    gsap.to(target4, { duration: 0.3, x: -offset4, ease: "expo.out" });
-    gsap.to(target5, { duration: 0.3, y: offset5, ease: "expo.out" });
+  gsap.to(target1, {
+    duration: 0.3,
+    yPercent: 50,
+    scrollTrigger: {
+      trigger: "#section__02",
+      scrub: true,
+      start: "top 40%",
+      ease: "power4.easeOut",
+      makers: true,
+    },
   });
+  gsap.to(target2, { duration: 0.6, y: offset2 });
+  gsap.to(target3, { duration: 0.3, x: offset3, ease: "expo.easeOut" });
+  gsap.to(target4, { duration: 0.3, x: -offset4, ease: "expo.easeOut" });
+  gsap.to(target5, { duration: 0.3, y: offset5, ease: "expo.easeIn" });
 
   requestAnimationFrame(scroll);
 }

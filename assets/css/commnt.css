@@ -48,7 +48,7 @@
     height: 15px;
     z-index: 9999;
     border-radius: 50%;
-    background: rgba(174, 133, 221, 0.3);
+    background: rgb(255, 255, 255);
     user-select: none;
     pointer-events: none;
     transition: transform 0.3s, opactiy 0.2s;
