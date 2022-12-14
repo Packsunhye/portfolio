@@ -80,11 +80,11 @@ body::-webkit-scrollbar-track {
     /*스크롤바 뒷 배경 색상*/
 }
 
-/* section {
-    height: 100vh;
+section {
+    width: 100%;
 }
 
-#section__02 {
+/* #section__02 {
     height: 220vh;
 }
 
