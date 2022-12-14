@@ -1,6 +1,8 @@
 /* cat */
 #section__03 {
-    margin-bottom: 340px;
+    width: 100%;
+    background-color: rgba(145, 26, 26, 0.322);
+    padding-bottom: 320px;
 }
 
 #section__03 .text__box {
@@ -58,7 +60,7 @@
 
 #section__03 .cat__side .cat__back {
     width: 70%;
-    padding: 20vh;
+    padding: 18vh;
     float: right;
     margin-top: 370px;
     background: url("../img/section02-05.png") no-repeat center center;
@@ -69,7 +71,7 @@
 #section__03 .about__cat {
     width: 1400px;
     background-color: #e0e4ff;
-    padding: 680px 0 210px 170px;
+    padding: 720px 0 170px 170px;
     margin: 180px 0 0 30px;
 }
 
@@ -83,7 +85,9 @@
 /* section__04 */
 #section__04 {
     width: 100%;
-    /* height: 2700px; */
+    background-color: rgba(52, 26, 145, 0.322);
+    padding-bottom: 100px;
+
 }
 
 .script__title {
@@ -134,7 +138,7 @@
 #section__04 .script__sea {
     width: 1200px;
     float: right;
-    margin-top: -30px;
+    margin-top: -290px;
 
 }
 
@@ -176,7 +180,8 @@
 
 #section__04 .effect__ul {
     color: #394083;
-    padding: 600px 0 0 200px;
+    /* margin: 300px 0; */
+    padding: 600px 0 400px 200px;
 }
 
 

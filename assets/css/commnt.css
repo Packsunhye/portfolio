@@ -56,7 +56,7 @@
 
 body {
     background-color: var(--bg);
-    height: 1000vh;
+    /* height: auto; */
     overflow-x: hidden;
     cursor: none;
 }
@@ -78,4 +78,32 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
     background: #eff1ff00;
     /*스크롤바 뒷 배경 색상*/
+}
+
+/* section {
+    height: 100vh;
+}
+
+#section__02 {
+    height: 220vh;
+}
+
+#section__03 {
+    height: 190vh;
+}
+
+#section__04 {
+    height: 240vh;
+} */
+
+#section__05 {
+    padding-top: 170px;
+    /* padding-bottom: 600px; */
+    /* height: 440vh !important; */
+    /* height: auto; */
+    /* height: 400vh; */
+}
+
+#section__06 {
+    /* height: 400vh; */
 }

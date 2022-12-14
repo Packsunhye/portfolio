@@ -3,9 +3,6 @@
     display: flex;
     text-align: center;
     align-items: center;
-
-    height: 100vh;
-
     margin-bottom: 280px;
 
     overflow: hidden;
@@ -52,8 +49,10 @@
 
 /* section__02 */
 #section__02 {
-    margin-bottom: 230px;
-    /* height: 1000vh; */
+    width: 100%;
+    background-color: rgba(85, 85, 85, 0.322);
+    padding-bottom: 240px;
+
 }
 
 #section__02 .section02__title .top {
@@ -114,7 +113,6 @@
 #section__02 .section02__image .about__back {
     width: 1410px;
     padding: 50vh;
-    /* height: 1020px; */
     background-color: #e0e4ff;
 
     position: absolute;
@@ -149,4 +147,5 @@
     line-height: 1.4;
     margin-top: 30px;
     word-break: keep-all;
+
 }
