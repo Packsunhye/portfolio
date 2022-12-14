@@ -4,7 +4,7 @@
     text-align: center;
     align-items: center;
 
-    /* height: 100vh; */
+    height: 100vh;
 
     margin-bottom: 280px;
 
@@ -113,7 +113,8 @@
 
 #section__02 .section02__image .about__back {
     width: 1410px;
-    height: 1020px;
+    padding: 50vh;
+    /* height: 1020px; */
     background-color: #e0e4ff;
 
     position: absolute;

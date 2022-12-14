@@ -1,17 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // smooth 효과
-// const lenis = new Lenis({
-//   duration: 1.2,
-//   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-// });
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+});
 
-// function raf(time) {
-//   lenis.raf(time);
-//   requestAnimationFrame(raf);
-// }
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
 
-// requestAnimationFrame(raf);
+requestAnimationFrame(raf);
 
 // 헤더 내려오기
 // gsap.set("#header", { height: -40 })
@@ -330,7 +330,7 @@ gsap.to("#section__04 .script__sea", {
     markers: true,
   },
   duration: 1,
-  delay: 1.4,
+  delay: 1.2,
   opacity: 1,
   stagger: 0.08,
   ease: "Back.out(1.7)",

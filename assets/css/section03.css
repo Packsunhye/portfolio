@@ -58,7 +58,7 @@
 
 #section__03 .cat__side .cat__back {
     width: 70%;
-    height: 40vh;
+    padding: 20vh;
     float: right;
     margin-top: 370px;
     background: url("../img/section02-05.png") no-repeat center center;
@@ -68,10 +68,9 @@
 
 #section__03 .about__cat {
     width: 1400px;
-    height: 950px;
     background-color: #e0e4ff;
-    padding: 720px 0 0 170px;
-    margin: 180px 0 0 40px;
+    padding: 680px 0 210px 170px;
+    margin: 180px 0 0 30px;
 }
 
 #section__03 .about__cat .cat__desc {
@@ -84,7 +83,7 @@
 /* section__04 */
 #section__04 {
     width: 100%;
-    height: 2700px;
+    /* height: 2700px; */
 }
 
 .script__title {
@@ -117,10 +116,10 @@
 
 #section__04 .script__back {
     width: 100%;
-    height: 550px;
+    /* height: 550px; */
     background-color: #426381;
     color: #22407A;
-    padding: 60px 0 0 200px;
+    padding: 60px 0 350px 200px;
 
     position: relative;
 
@@ -135,7 +134,7 @@
 #section__04 .script__sea {
     width: 1200px;
     float: right;
-    margin-top: -360px;
+    margin-top: -30px;
 
 }
 
@@ -170,7 +169,7 @@
     border-radius: 50%;
     z-index: 3;
     position: absolute;
-    backdrop-filter: bl;
+    /* backdrop-filter: bl; */
     background-image: linear-gradient(rgba(255, 255, 255, 0.137), rgba(64, 15, 201, 0.438));
 
 }
