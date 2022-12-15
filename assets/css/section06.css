@@ -1,5 +1,5 @@
 #section__06 {
-    padding-top: 400px;
+    padding: 400px 0;
 }
 
 #section__06 .project__top {
@@ -80,6 +80,7 @@
 
 #section__06 .project__middle .middle__desc {
     width: 32%;
+    font-size: 18px;
     word-break: keep-all;
     margin-right: auto;
     text-align: left;
@@ -91,14 +92,62 @@
     width: 1190px;
 }
 
+#section__06 .project__bottom {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding: 0 60px 0 80px;
+    position: relative;
+}
+
+#section__06 .project__bottom .bottom__back .bottom__image {
+    /* width: 20%; */
+}
+
+#section__06 .project__bottom>h2 {
+    font-size: 6rem;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    color: #353c7c;
+}
+
+#section__06 .project__bottom .bottom__back .bottom__image .bottom__desc {
+    padding-top: 20px;
+    font-size: 18px;
+    text-align: right;
+    width: 40%;
+    word-break: keep-all;
+    font-family: var(--font-desc);
+    color: #353c7c;
+
+    float: right;
+}
+
+#section__06 .project__bottom .bond {
+    position: absolute;
+    top: 28px;
+    left: 300px;
+
+    z-index: -1;
+}
+
+.project__bottom .bottom__back .back__box {
+    width: 730px;
+    padding: 12vh;
+    background-color: #9d91de8c;
+    margin-top: -60px;
+
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+
 #section__06 .project__bottom .bottom__back .BusinessCard {
     width: 530px;
 }
 
 #section__06 .project__bottom .bottom__back .bottom__image {
     width: 1190px;
-}
-
-#section__06 .project__bottom {
-    padding: 0 60px 0 80px
 }
