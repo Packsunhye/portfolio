@@ -1,25 +1,28 @@
 #section__08 {
     background-color: #a09fd2;
-    height: 1150px;
 
 }
+
+
 #section__08 .contact {
     padding-top: 180px;
     width: 1470px;
-    
+
     margin: 0 auto;
     position: relative;
 }
 
-#section__08 .contact > h2 {
+#section__08 .contact>h2 {
     font-family: var(--font-big-medium);
     text-transform: uppercase;
     font-size: 6rem;
     color: #e2ddff;
 }
-#section__08 .contact .inner__image .back__purple > img {
+
+#section__08 .contact .inner__image .back__purple>img {
     width: 755px;
 }
+
 #section__08 .contact .inner__image .commit {
     display: flex;
     justify-content: space-between;
@@ -27,12 +30,15 @@
     top: 400px;
     left: 280px;
 }
+
 #section__08 .contact .inner__image .contact-me {
     margin-right: 20px;
 }
-#section__08 .contact .inner__image .contact-me > img {
+
+#section__08 .contact .inner__image .contact-me>img {
     width: 500px;
 }
+
 #section__08 .contact .inner__image .contact__me #email {
     width: 700px;
     height: 80px;
@@ -45,6 +51,7 @@
     color: #252c6a;
     background-color: #d3d7f5;
 }
+
 #section__08 .contact .inner__image .contact__me #message {
     width: 700px;
     height: 480px;
@@ -53,6 +60,7 @@
     border: 0;
     background-color: #d3d7f5;
 }
+
 #section__08 .contact .inner__image .contact__me button {
     width: 700px;
     height: 80px;
@@ -61,13 +69,13 @@
     color: #fff;
     font-family: var(--font-big-medium);
     font-size: 24px;
-} 
+}
 
 #section__08 .contact .yunie {
     font-family: var(--font-prt);
     font-size: 8rem;
     color: #e2ddff;
-    
+
 }
 
 #section__08 .contact .yunie .love {
@@ -75,17 +83,20 @@
     top: 85px;
     /* font-size: 8rem; */
 }
+
 #section__08 .contact .yunie .star__01 {
     position: absolute;
     top: 225px;
     left: 770px;
 }
+
 #section__08 .contact .yunie .star__02 {
     position: absolute;
     top: 780px;
     right: 10px;
     color: #fff;
 }
+
 #section__08 .contact .yunie .star__03 {
     position: absolute;
     left: 140px;

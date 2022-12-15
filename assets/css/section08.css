@@ -4,6 +4,11 @@
 
 }
 
+fieldset {
+    border: 0;
+}
+
+
 #section__08 .contact {
     padding-top: 180px;
     width: 1470px;
@@ -12,14 +17,14 @@
     position: relative;
 }
 
-#section__08 .contact>h2 {
+#section__08 .contact h2 {
     font-family: var(--font-title);
     text-transform: uppercase;
     font-size: 6rem;
     color: #e2ddff;
 }
 
-#section__08 .contact .inner__image .back__purple>img {
+#section__08 .contact .inner__image .back__purple {
     width: 755px;
 }
 
@@ -35,13 +40,13 @@
     margin-right: 20px;
 }
 
-#section__08 .contact .inner__image .contact-me>img {
+#section__08 .contact .inner__image .contact-me {
     width: 500px;
 }
 
 #section__08 .contact .inner__image .contact__me #email {
     width: 700px;
-    height: 80px;
+    /* height: 80px; */
     margin-bottom: 20px;
     border: 0;
     padding: 20px;
@@ -54,6 +59,7 @@
 
 #section__08 .contact .inner__image .contact__me #message {
     width: 700px;
+    /* padding: 90vh; */
     height: 480px;
     margin-bottom: 10px;
     padding: 20px;
@@ -63,12 +69,14 @@
 
 #section__08 .contact .inner__image .contact__me button {
     width: 700px;
-    height: 80px;
+    padding: 2vh;
+    /* height: 80px; */
     text-align: center;
     background-color: #6e79c3;
     color: #fff;
     font-family: var(--font-title-medium);
     font-size: 24px;
+    border: 0;
 }
 
 #section__08 .contact .yunie {
