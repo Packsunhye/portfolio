@@ -50,8 +50,6 @@
     z-index: -5;
     top: 360px;
     left: 280px;
-
-   
 }
 
 #section__06 .project__middle .middle__back>img {
@@ -95,6 +93,7 @@
     left: 255px;
     z-index: -2;
 }
+
 .project__bottom .bottom__back .BusinessCard>img {
     width: 530px;
 }
@@ -105,6 +104,7 @@
     display: block;
     margin-bottom: 20px;
 }
+
 .project__bottom .bottom__back .bottom__desc {
     color: #6a68b8;
     width: 28%;
@@ -117,8 +117,8 @@
     height: 220px;
     background-color: #9d91de8c;
 
-   position: absolute;
-   top: 665px;
-   left: 100px;
-   z-index: -3;
+    position: absolute;
+    top: 665px;
+    left: 100px;
+    z-index: -3;
 }

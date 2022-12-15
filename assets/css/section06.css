@@ -1,0 +1,104 @@
+#section__06 {
+    padding-top: 400px;
+}
+
+#section__06 .project__top {
+    text-align: center;
+
+    width: 1520px;
+    padding: 0 10px;
+    margin: 0 auto;
+    min-width: 1520px;
+}
+
+#section__06 .project__top>h2 {
+    font-family: var(--font-title);
+    color: var(--font-title-color);
+    text-transform: uppercase;
+    font-size: 8.8vw;
+}
+
+#section__06 .project__top .project__main {
+    margin-top: -150px;
+
+    width: 100%;
+    padding: 34vh;
+    background: url("../img/project01.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section__06 .project__middle {
+    position: relative;
+
+    padding: 160px 0 0 200px;
+}
+
+#section__06 .project__middle .bind {
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    z-index: -1;
+}
+
+#section__06 .project__middle .bind>h2 {
+    font-size: 5rem;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    color: #353c7c;
+
+    /* margin-top: -160px; */
+
+}
+
+#section__06 .project__middle .bind>h2 span {
+    display: inline-block;
+    transform: translateY(5vw);
+    min-width: 1.5vw
+}
+
+
+#section__06 .project__middle .middle__back {
+    width: 500px;
+    /* padding-left: 170px; */
+    border-start-end-radius: 50% 50%;
+    border-start-start-radius: 50% 50%;
+
+    margin-left: 170px;
+    padding: 24vh;
+    background: url("../img/project02.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section__06 .project__middle .main__image {
+    padding-right: 30px;
+    width: 72.5%;
+    margin-left: auto;
+    padding-top: 300px;
+}
+
+#section__06 .project__middle .middle__desc {
+    width: 32%;
+    word-break: keep-all;
+    margin-right: auto;
+    text-align: left;
+    color: #6a68b8;
+    font-family: var(--font-desc);
+}
+
+#section__06 .project__middle .main__image>img {
+    width: 1190px;
+}
+
+#section__06 .project__bottom .bottom__back .BusinessCard {
+    width: 530px;
+}
+
+#section__06 .project__bottom .bottom__back .bottom__image {
+    width: 1190px;
+}
+
+#section__06 .project__bottom {
+    padding: 0 60px 0 80px
+}

@@ -132,7 +132,7 @@ gsap.to("#section__02 .section02__image .about__me .profill", {
   scrollTrigger: {
     trigger: "#section__02 .about__me",
     // scrub: true,
-    start: "top 50%",
+    start: "top 20%",
   },
   duration: 0.8,
   delay: 1,
@@ -344,7 +344,7 @@ gsap.to("#section__04 .effect__ul .effect__list .EY-1", {
   scrollTrigger: {
     trigger: "#section__04 .effect__ul",
     // scrub: true,
-    start: "top 10%",
+    start: "top 30%",
     markers: true,
   },
   duration: 1,
@@ -362,7 +362,7 @@ gsap.to("#section__04 .effect__ul .effect__list .EY-2", {
   scrollTrigger: {
     trigger: "#section__04 .effect__ul",
     // scrub: true,
-    start: "top 10%",
+    start: "top 30%",
     markers: true,
   },
   duration: 1,
@@ -380,7 +380,7 @@ gsap.to("#section__04 .effect__ul .effect__list .EY-3", {
   scrollTrigger: {
     trigger: "#section__04 .effect__ul",
     // scrub: true,
-    start: "top 10%",
+    start: "top 30%",
     markers: true,
   },
   duration: 1,
@@ -398,7 +398,7 @@ gsap.to("#section__04 .effect__ul .effect__list .EY-4", {
   scrollTrigger: {
     trigger: "#section__04 .effect__ul",
     // scrub: true,
-    start: "top 10%",
+    start: "top 30%",
     markers: true,
   },
   duration: 1,
@@ -416,7 +416,7 @@ gsap.to("#section__04 .effect__ul .effect__list .EY-5", {
   scrollTrigger: {
     trigger: "#section__04 .effect__ul",
     // scrub: true,
-    start: "top 10%",
+    start: "top 30%",
     markers: true,
   },
   duration: 1,
@@ -434,7 +434,7 @@ gsap.to("#section__04 .effect__ul .effect__list .EY-6", {
   scrollTrigger: {
     trigger: "#section__04 .effect__ul",
     // scrub: true,
-    start: "top 10%",
+    start: "top 30%",
     markers: true,
   },
   duration: 1,
@@ -443,6 +443,25 @@ gsap.to("#section__04 .effect__ul .effect__list .EY-6", {
   stagger: 0.08,
   ease: "Back.out(1.7)",
   x: 0,
+});
+// section 06
+gsap.set("#section__06 .project__top > h2", {
+  opacity: 0,
+  y: 100,
+});
+gsap.to("#section__06 .project__top > h2", {
+  scrollTrigger: {
+    trigger: "#section__06 .project__top",
+    // scrub: true,
+    start: "top 60%",
+    markers: true,
+  },
+  duration: 1,
+  delay: 1,
+  opacity: 1,
+  stagger: 0.08,
+  ease: "Back.out(1.7)",
+  y: -40,
 });
 
 // const target1 = gsap.utils.toArray(".eex");
