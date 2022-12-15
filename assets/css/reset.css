@@ -132,6 +132,10 @@ table {
     margin-top: 0 !important;
 }
 
+legend.ir {
+    display: none;
+}
+
 /* 디자인 초기화 */
 input,
 textarea,
