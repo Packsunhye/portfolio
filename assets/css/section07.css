@@ -1,0 +1,152 @@
+#section__07 {
+    position: relative;
+    color: var(--open-color);
+}
+
+#section__07 .open__top {
+    padding: 50px 0;
+    width: 100%;
+    background-color: #d6d2f2;
+}
+
+#section__07 summary {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    font-size: 2.8rem;
+}
+
+.open__top details {
+    margin-bottom: 50px;
+    width: 50%;
+
+}
+
+.open__top details summary {
+    border-bottom: 1px solid var(--open-color);
+    position: relative;
+    transform: scaleX(-1);
+    /* color: var(--open-color); */
+}
+
+.open__top details summary b {
+    display: inline-block;
+    position: absolute;
+    right: 6px;
+    transform: scaleX(-1);
+    font-weight: normal;
+
+}
+
+details[open] summary {
+    border-top: 1px solid var(--open-color);
+    border-bottom: 0;
+
+}
+
+details[open] summary b {
+    padding-top: 20px;
+}
+
+.open__top .open__viwGub {
+    display: flex;
+    margin-top: 30px;
+}
+
+.open__top details .open p {
+    margin-top: 40px;
+    font-family: var(--font-desc);
+}
+
+.open__top .open__viwGub li {
+    border-radius: 30px;
+    border: 1px solid var(--open-color);
+    width: 170px;
+    height: 20px;
+    padding: 20px;
+
+    text-align: center;
+    line-height: 1px;
+
+
+}
+
+.open__top .open__viwGub li a {
+    font-size: 14px;
+    color: var(--open-color);
+}
+
+.open__top .open__viwGub li:nth-child(1) {
+    margin-right: 40px;
+}
+
+/* bottom */
+#section__07 .open__bottom {
+    padding: 50px 0;
+
+    /* width: 100%; */
+    background-color: #C2C3EB;
+}
+
+.open__bottom details {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.open__bottom details summary {
+    border-bottom: 1px solid var(--open-color);
+    position: relative;
+    transform: scaleX(-1);
+    text-align: right;
+}
+
+.open__bottom details summary b {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    transform: scaleX(-1);
+    font-weight: normal;
+}
+
+details[open] summary {
+    border-top: 1px solid var(--open-color);
+    border-bottom: 0;
+
+}
+
+details[open] summary b {
+    padding-top: 20px;
+}
+
+.open__bottom .open__viwGub {
+    display: flex;
+    margin-top: 30px;
+}
+
+.open__bottom details .open p {
+    margin-top: 40px;
+    font-family: var(--font-desc);
+}
+
+.open__bottom .open__viwGub li {
+    border-radius: 30px;
+    border: 1px solid var(--open-color);
+    width: 170px;
+    height: 20px;
+    padding: 20px;
+
+    text-align: center;
+    line-height: 1px;
+
+
+}
+
+.open__bottom .open__viwGub li a {
+    font-size: 14px;
+    color: var(--open-color);
+}
+
+.open__bottom .open__viwGub li:nth-child(1) {
+    margin-right: 40px;
+}
