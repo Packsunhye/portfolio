@@ -13,12 +13,21 @@
     font-size: 18px;
     color: #474066;
     font-style: normal;
+    transform: translateY(-5vw);
 }
 
 #section__05 .sec05__title em {
     font-family: var(--font-title);
     font-size: 7rem;
     color: #474066;
+}
+
+#section__05 .sec05__title em span {
+    display: inline-block;
+    transform: translateY(5vw);
+    min-width: 1.5vw;
+
+
 }
 
 #section__05 .sec05__inner .site__desc {

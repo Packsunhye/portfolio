@@ -86,6 +86,7 @@
     text-align: left;
     color: #6a68b8;
     font-family: var(--font-desc);
+    padding-top: 20px;
 }
 
 #section__06 .project__middle .main__image>img {
@@ -111,6 +112,12 @@
     font-family: var(--font-title);
     text-transform: uppercase;
     color: #353c7c;
+}
+
+#section__06 .project__bottom>h2 span {
+    display: inline-block;
+    transform: translateY(5vw);
+    min-width: 1.5vw;
 }
 
 #section__06 .project__bottom .bottom__back .bottom__image .bottom__desc {

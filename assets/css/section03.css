@@ -140,6 +140,7 @@
 
 #section__04 .view__curser {
     position: absolute;
+    left: -400px;
     width: 350px;
     height: 350px;
     border-radius: 50%;
