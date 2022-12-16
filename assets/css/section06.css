@@ -89,8 +89,25 @@
     padding-top: 20px;
 }
 
-#section__06 .project__middle .main__image>img {
+#section__06 .project__middle .main__image .imageBox01 {
     width: 1190px;
+    position: relative;
+}
+
+#section__06 .project__middle .main__image .imageBox01 .pro3__bee {
+    /* opacity: 1; */
+}
+
+#section__06 .project__middle .main__image .imageBox01 .project03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+#section__06 .project__middle .main__image .imageBox01:hover .project03 {
+    opacity: 1;
 }
 
 #section__06 .project__bottom {
@@ -134,8 +151,8 @@
 
 #section__06 .project__bottom .bond {
     position: absolute;
-    top: 28px;
-    left: 300px;
+    top: 15px;
+    left: 265px;
 
     z-index: -1;
 }
@@ -155,6 +172,23 @@
     width: 530px;
 }
 
-#section__06 .project__bottom .bottom__back .bottom__image {
-    width: 1190px;
+#section__06 .project__bottom .imageBox02 {
+    /* width: 1190px; */
+    position: relative;
+}
+
+#section__06 .project__bottom .imageBox02 .pro5__bee {
+    /* opacity: 1; */
+}
+
+#section__06 .project__bottom .imageBox02 .project05 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+#section__06 .project__bottom .imageBox02:hover .project05 {
+    opacity: 1;
 }

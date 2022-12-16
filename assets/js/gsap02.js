@@ -212,12 +212,12 @@ gsap.set("#section__06 .project__bottom .bond .BusinessCard", {
 gsap.to("#section__06 .project__bottom .bond .BusinessCard", {
   scrollTrigger: {
     trigger: "#section__06 .project__bottom .bond",
-    start: "top 10%",
+    start: "top 30%",
     // markers: true,
   },
   delay: 1,
   duration: 0.5,
-  x: 0,
+  x: -10,
   stagger: 0.04,
   opacity: 1,
   ease: Back.easeOut.config(1.7),
@@ -228,7 +228,7 @@ gsap.set("#section__06 .project__bottom .bond .back__box", {
 gsap.to("#section__06 .project__bottom .bond .back__box", {
   scrollTrigger: {
     trigger: "#section__06 .project__bottom .bond",
-    start: "top 10%",
+    start: "top 30%",
     // markers: true,
   },
   delay: 1,
