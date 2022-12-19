@@ -1,0 +1,296 @@
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) {
+
+    /* section__02 */
+    #section__02 .section02__title .top {
+        font-size: 8vw;
+    }
+
+    #section__02 .section02__title .bottom i {
+        font-size: 8vw;
+    }
+
+    #section__01 .center p {
+        font-size: 6vw;
+    }
+
+    .flex_zone .about__arched {
+        width: 300px;
+        margin-right: 15px;
+    }
+
+    #section__02 .section02__title .bottom i {
+        padding-left: 160px;
+        padding-right: 45px;
+    }
+
+    #section__02 .section02__title .bottom em {
+        font-size: 1.4vw;
+        padding-left: 400px;
+    }
+
+    .section02__image .about__box {
+        width: 565px;
+    }
+
+    .section02__image .about__me {
+        padding-top: 95px;
+    }
+
+    .section02__image .about__me .profill {
+        width: 500px;
+    }
+
+    .section02__image .about__me {
+        width: 64%;
+    }
+
+    .section02__image .about__me .about__desc {
+        margin-top: 10px;
+        font-size: 1.5vw;
+    }
+
+    /* section__03 */
+    #section__03 .text__box {
+        font-size: 6vw;
+    }
+
+    #section__03 .text__box .bottom {
+        margin-top: -25px;
+    }
+
+    #section__03 .cat__side .cat__img {
+        width: 625px;
+        right: 20px;
+    }
+
+    #section__03 .cat__side .cat__back {
+        margin-top: 220px;
+    }
+
+    #section__03 .about__cat {
+        margin: 70px 0 0 30px;
+        padding: 530px 0 170px 170px;
+    }
+
+    #section__03 .about__cat .cat__desc {
+        font-size: 1.5vw;
+    }
+
+    /* section__04 */
+    #section__04 .script__title {
+        font-size: 8vw;
+    }
+
+    #section__04 .script__title em {
+        font-size: 1.5vw;
+    }
+
+    #section__04 .script__back {
+        padding: 25px 0 360px 35px;
+    }
+
+    #section__04 .script__sea {
+        width: 850px;
+    }
+
+    #section__04 .effect__ul {
+        padding: 250px 0 0 115px;
+    }
+
+    #section__04 .effect__ul .effect__list a {
+        font-size: 7vw;
+    }
+
+    #section__04 .effect__ul .effect__list span {
+        font-size: 1.2vw;
+        margin-top: 40px;
+    }
+
+    #section__04 .view__curser {
+        width: 300px;
+        height: 300px;
+    }
+
+    #section__04 .view__curser::after {
+        font-size: 8vw;
+    }
+
+    #section__04 .view__curser::before {
+        content: '';
+        width: 300px;
+        height: 300px;
+    }
+
+    .site__back {
+        top: 400px;
+    }
+
+    /* section__05 */
+    #section__05 .sec05__inner .site__desc>p {
+        font-size: 1.5vw;
+        width: 70%;
+        padding: 0 80px 0 0;
+    }
+
+    #section__05 .sec05__inner .site__view .op {
+        width: 600px;
+    }
+
+    #section__05 .sec05__inner .site__view .svg-mode {
+        width: 300px;
+    }
+
+    #section__05 .sec05__inner .site__view .site-01 .svg-mode.one {
+        top: 245px;
+    }
+
+    #section__05 .sec05__inner .site__view .site-02 .svg-mode.two {
+        top: 105px;
+        left: 260px;
+    }
+
+    #section__05 .sec05__inner .site__view .site-03 .svg-mode.tree {
+        top: 50px;
+    }
+
+    #section__05 .sec05__inner .site__view .site-04 .svg-mode.fo {
+        top: 315px;
+    }
+
+    #section__05 .menuImage {
+        padding-top: 170px;
+    }
+
+    .menu-wrap .menu li {
+        margin-bottom: 120px;
+    }
+
+    .menu-wrap .menu li span.slogan {
+        bottom: 0vw;
+    }
+
+    /* section__06 */
+    #section__06 .project__top {
+        width: 100%;
+    }
+
+    #section__06 .project__top>h2 {
+        font-size: 11vw;
+        padding-bottom: 53px;
+
+    }
+
+    #section__06 .project__middle {}
+
+    #section__06 .project__middle .main__image {}
+
+    #section__06 .project__middle .bind {
+        left: 25px;
+    }
+
+    #section__06 .project__middle .middle__back {
+        margin-left: 25px;
+        width: 330px;
+        padding: 18vh;
+    }
+
+    #section__06 .project__middle .main__image {
+        width: auto;
+    }
+
+    #section__06 .project__middle .main__image .imageBox01 {
+        width: 860px;
+    }
+
+    #section__06 .project__middle .middle__desc {
+        width: 82%;
+        font-size: 1.5vw;
+    }
+
+    #section__06 .project__bottom>h2 {
+        font-size: 6vw;
+    }
+
+    #section__06 .project__bottom .bottom__back .BusinessCard {
+        width: 300px;
+    }
+
+    #section__06 .project__bottom .bond {
+        top: -180px;
+        left: 450px;
+    }
+
+    #section__06 .project__bottom .bottom__back .bottom__image .bottom__desc {
+        font-size: 1.5vw;
+        width: 70%;
+    }
+
+    #section__07 .open__top {
+        padding: 45px 10px;
+    }
+
+    .section_container {
+        width: 100%;
+        min-width: 100%
+    }
+
+    .open__top details {
+        width: 60%;
+    }
+
+    .open__bottom details {
+        width: 60%;
+    }
+
+    /*  */
+    #section__08 .contact .inner__image .back__purple {
+        display: none;
+    }
+
+    #section__08 .contact .yunie .love {
+        top: 75px;
+        left: 10px;
+    }
+
+    #section__08 .contact .inner__image .commit {
+        left: 0;
+        padding: 20px;
+    }
+
+    #section__08 .contact .inner__image .contact__me #email {
+        width: 460px;
+    }
+
+    #section__08 .contact .inner__image .contact__me #message {
+        width: 460px;
+    }
+
+    #section__08 .contact .inner__image .contact__me button {
+        width: 460px;
+    }
+
+    #section__08 .contact .yunie .star__01 {
+        top: 730px;
+        left: 855px;
+        color: #fff;
+    }
+
+    #section__08 .contact .yunie .star__03 {
+        left: 20px;
+        top: 280px;
+        color: #fff;
+    }
+
+    #section__08 .contact .inner__image .commit {
+        margin-top: -110px;
+    }
+
+
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) {}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {}
