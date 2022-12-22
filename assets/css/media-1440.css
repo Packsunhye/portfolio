@@ -1,5 +1,11 @@
 /* PC (해상도 1024px)*/
-@media(max-width:1024px) {
+@media(max-width: 1700px) {
+    #section__06 .project__bottom .bond {
+        left: 84px;
+    }
+}
+
+@media(max-width:1440px) {
 
     /* section__02 */
     #section__02 .section02__title .top {
@@ -20,8 +26,8 @@
     }
 
     #section__02 .section02__title .bottom i {
-        padding-left: 160px;
-        padding-right: 45px;
+        padding-left: 150px;
+        /* padding-right: 45px; */
     }
 
     #section__02 .section02__title .bottom em {
@@ -209,7 +215,8 @@
     }
 
     #section__06 .project__bottom>h2 {
-        font-size: 6vw;
+        font-size: 4.6vw;
+
     }
 
     #section__06 .project__bottom .bottom__back .BusinessCard {
@@ -245,20 +252,26 @@
 
     /*  */
     #section__08 .contact .inner__image .back__purple {
-        display: none;
+        /* display: none; */
+        padding-left: 30px;
+    }
+
+    #section__08 .contact>h2 {
+        padding-left: 20px;
     }
 
     #section__08 .contact .yunie .love {
         top: 75px;
-        left: 10px;
+        left: 30px;
     }
 
     #section__08 .contact .inner__image .commit {
-        left: 0;
+        left: 120px;
+        top: 500px;
         padding: 20px;
     }
 
-    #section__08 .contact .inner__image .contact__me #email {
+    /* #section__08 .contact .inner__image .contact__me #email {
         width: 460px;
     }
 
@@ -268,11 +281,17 @@
 
     #section__08 .contact .inner__image .contact__me button {
         width: 460px;
-    }
+    } */
 
     #section__08 .contact .yunie .star__01 {
-        top: 730px;
-        left: 855px;
+        top: 820px;
+        left: 595px;
+        color: #fff;
+    }
+
+    #section__08 .contact .yunie .star__02 {
+        top: 535px;
+        right: 135px;
         color: #fff;
     }
 

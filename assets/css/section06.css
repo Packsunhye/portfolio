@@ -111,7 +111,7 @@
 }
 
 #section__06 .project__bottom {
-    margin-top: 300px;
+    margin-top: 430px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -151,6 +151,7 @@
 
 #section__06 .project__bottom .bond {
     position: absolute;
+
     top: 15px;
     left: 265px;
 
