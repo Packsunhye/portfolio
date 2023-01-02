@@ -1,0 +1,122 @@
+@media(max-width:768px) {
+    #section__01 .center p {
+        font-size: 7vw;
+    }
+    .flex_zone .about__arched {
+        width: 200px;
+        height: 230px;
+    }
+    #section__02 .section02__title .top {
+        font-size: 9vw;
+    }
+    #section__02 .section02__title .bottom i {
+        padding-right: 0;
+        padding-left: 140px;
+        font-size: 9vw;
+    }
+    #section__02 .section02__title .bottom em {
+        /* padding-left: 43px; */
+        display: none;
+    }
+    .section02__image .about__box {
+        padding-top: 75px;
+    }
+
+
+    #section__03 .text__box .bottom em {
+        display: none;
+    }
+    .script__back .script__desc {
+        width: 66%;
+    }
+    #section__04 .script__sea {
+        width: 650px;
+    }
+
+    #section__04 .effect__ul {
+        padding: 230px 0 0 40px;
+    }
+    #section__04 .effect__ul .effect__list a {
+        font-size: 10vw;
+    }
+
+    #section__04 .effect__ul .effect__list span {
+        display: none;
+    }
+
+    #section__05 .sec05__title em {
+        font-size: 7vw;
+    }
+
+    #section__05 .sec05__inner .site__view .op {
+        width: 450px;
+    }
+
+    #section__05 .sec05__inner .site__view .svg-mode {
+        width: 240px;
+    }
+    #section__05 .sec05__inner .site__view .site-01 {
+        padding: 50px 0 50px;
+    }
+    #section__05 .sec05__inner .site__view .site-02 {
+        padding: 50px 0 50px;
+    }
+    #section__05 .sec05__inner .site__view .site-03 {
+        padding: 50px 0 50px;
+    }
+    #section__05 .sec05__inner .site__view .site-04 {
+        padding: 20px 0 20px;
+    }
+    #section__05 .sec05__inner .site__view .site-01 .svg-mode.one {
+        top: 170px;
+        left: 240px;
+    }
+    #section__05 .sec05__inner .site__view .site-02 .svg-mode.two {
+        left: 195px;
+    }
+    #section__05 .sec05__inner .site__view .site-04 .svg-mode.fo {
+        top: 185px;
+        left: 205px;
+    }
+    #section__05 .menuImage {
+        padding-top: 100px;
+    }
+    .menu-wrap .menu li {
+        margin-bottom: 50px;
+    }
+    .menuImage-container {
+        width: 400px;
+    }
+    #section__06 .project__top>h2 {
+        font-size: 10vw;
+    }
+    .open__top details,.open__bottom details {
+        width: 80%;
+    }
+    #section__08 .contact .inner__image .contact-me {
+        width: 250px;
+        height: 360px;
+    }
+    #section__08 .contact .inner__image .contact__me #email {
+        height: 45px;
+        font-size: 16px;
+    }
+    #section__08 .contact .inner__image .contact__me #message {
+        height: 245px;
+    }
+    #section__08 .contact .inner__image .contact__me button {
+        padding: 0;
+    }
+    #section__08 .contact .yunie .love {
+        left: 26px;
+    }
+    #section__08 .contact .yunie .star__03 {
+        display: none;
+    }
+    #section__08 .contact .inner__image .commit {
+        margin-top: -220px;
+    }
+    #section__08 {
+        height: 800px;
+    }
+}

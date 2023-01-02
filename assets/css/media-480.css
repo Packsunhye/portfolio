@@ -1,0 +1,166 @@
+@media(max-width:480px) {
+    #section__01 .center h1 {
+        font-size: 8vw;
+    }
+    #section__02 .section02__title .top {
+        padding-bottom: 20px;
+        font-size: 11vw;
+    }
+    #section__02 .section02__title .bottom i {
+        font-size: 11vw;
+    }
+    .flex_zone .about__arched {
+        display: none;
+    }
+    .section02__image .about__box {
+        padding-top: 90px;
+    }
+    .section02__image .about__me .profill {
+        width: 400px;
+    }
+    .section02__image .about__me .about__desc {
+        font-size: 3vw;
+    }
+    .section02__image .about__me { 
+        width: 80%;
+    }
+
+    #section__03 .text__box {
+        font-size: 11vw;
+        padding-left: 10px;
+    }
+    #section__03 .cat__side .cat__img {
+        width: 455px;
+    }
+    #section__03 .about__cat .cat__desc {
+        font-size: 3vw;
+    }
+    #section__03 .about__cat {
+        padding: 530px 0 170px 40px;
+        margin: 70px 0 0 -35px;
+    }
+    #section__04 .script__title {
+        font-size: 11vw;
+    }
+    #section__04 .script__title em {
+        display: none;
+    }
+    .script__back .script__desc {
+        font-size: 3vw;
+    }
+
+    #section__04 .script__sea {
+        width: 440px;
+    }
+    #section__04 .effect__ul {
+        padding: 120px 0 0 40px;
+    }
+
+
+    #section__05 .sec05__title i {
+        display: none;
+    }
+    #section__05 .sec05__title em {
+        font-size: 11vw;
+    }
+
+    #section__05 .sec05__inner .site__desc>p {
+        font-size: 3vw;
+        width: 80%;
+        padding: 0 20px 0 0;
+    }
+
+
+    #section__05 .sec05__inner .site__view .op {
+        width: 240px;
+    }
+    #section__05 .sec05__inner .site__view .site-01 {
+        padding: 20px 0;
+    }
+    #section__05 .sec05__inner .site__view .site-02 {
+        padding: 20px 0;
+    }
+    #section__05 .sec05__inner .site__view .site-03 {
+        padding: 20px 0;
+    }
+    #section__05 .sec05__inner .site__view .site-04 {
+        padding: 20px 0;
+    }
+
+    #section__05 .sec05__inner .site__view .svg-mode {
+        width: 135px;
+    }
+    #section__05 .sec05__inner .site__view .site-01 .svg-mode.one {
+        top: 77px;
+        left: 145px;
+    }
+    #section__05 .sec05__inner .site__view .site-04 .svg-mode.fo {
+        top: 125px;
+        left: 205px;
+    }
+
+    .menu-wrap .menu li span.slogan {
+        font-size: 14px;
+    }
+
+    #section__06 .project__middle .middle__back {
+        display: none;
+    }
+    #section__06 .project__middle .bind {
+        left: 0;
+    }
+    #section__06 .project__middle .bind>h2 {
+        font-size: 11vw;
+    }
+    #section__06 .project__middle {
+        padding: 0 0 0 0;
+    }
+    #section__06 .project__middle .main__image {
+        width: 100%;
+    }
+    #section__06 .project__middle .main__image .imageBox01 {
+        width: 480px;
+    }
+    #section__06 .project__middle .middle__desc {
+        font-size: 3vw;
+        padding-left: 10px;
+    }
+    #section__06 .project__bottom {
+        margin-top: 300px;
+        padding: 0 0 0 15px;
+    }
+    #section__06 .project__bottom .bond {
+        top: 45px;
+    }
+    #section__06 .project__bottom>h2 {
+        font-size: 9.8vw;
+    }
+    #section__06 .project__bottom .bottom__back .BusinessCard{
+        display: none;
+    }
+    #section__06 .project__bottom .bottom__back .bottom__image .bottom__desc {
+        font-size: 3vw;
+        width: 90%;
+    }
+
+    #section__07 summary {
+        font-size: 1.7rem;
+    }
+
+
+
+    #section__08 .contact .inner__image .commit {
+        display: none;
+    }
+    #section__08 .contact h2 {
+        font-size: 4rem;
+    }
+    #section__08 {
+        height: 380px;
+    }
+    #section__08 .contact .yunie .love {
+        font-size: 6rem;
+        left: 25px;
+        top: 105px;
+    }
+}
